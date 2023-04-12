@@ -29,7 +29,6 @@ Help: VWH
 |$max=         |get field               |Deliver To|value                                                                    |
 |populate field|Short Order Description |with      |$max                                                                     |
 
-!|scenario        |click button with SAVE DETAILS|SAVEDETAILS|with Dummy Reservation|DummyReservation|
-|click on checkbox|@DummyReservation                                                                 |
-|click on button  |@SAVEDETAILS                                                                      |
+!|scenario      |click button with SAVE DETAILS|SAVEDETAILS|
+|click on button|@SAVEDETAILS                              |
 
