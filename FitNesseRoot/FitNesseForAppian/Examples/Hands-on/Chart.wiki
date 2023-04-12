@@ -20,7 +20,6 @@ Test
 |count grid            |[1]                      |rows                                                    |
 |show                  |count grid               |[1]                     |rows                           |
 |populate field        |                         |with value              |Solution Traction              |
-|click on column chart |                         |column                  |[2]                            |
 
 
 
