@@ -23,6 +23,6 @@ Test
 !|script                                                                                         |
 |Variable with Deliver To|Chennai|with Building|Shyamala Towers|with Short Order Description|$max|
 
-!|script                                                                                |
-|click button with SAVE DETAILS|SAVE DETAILS|with Dummy Reservation|Dummy Reservation[1]|
+!|script                                    |
+|click button with SAVE DETAILS|SAVE DETAILS|
 
