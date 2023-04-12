@@ -1,0 +1,22 @@
+---
+Help: JSON
+---
+!define TEST_SYSTEM {slim}
+!define COMMAND_PATTERN {java -Dlog4j.debug -Dlog4j.configuration=file:\\\${automated.testing.home}\log4j.properties -cp %p %m}
+!path ${automated.testing.home}/**.jar
+             
+!| script              |com.appiancorp.ps.automatedtest.fixture.SitesFixture                                                                |
+|setup with            |CHROME                  |Browser                                                                                    |
+|set appian url to     |https://appiancoe.vuram.com/suite/sites/as_virtualwarehouse                                                         |
+|set appian version to |22.3                                                                                                                |
+|set appian locale to  |en_US                                                                                                               |
+|set screenshot path to|C:\FitNesse\Screenshot/                                                                                             |
+|login with username   |Aswin@1234                                                                                                          |
+|set test variable     |info                    |with    |{"button":"SAVE DETAILS","To":"chennai","Building":"Shyamala Tower","Lab":"Vuram"}|
+|click on menu         |ORDER PARTS                                                                                                         |
+|populate field        |Deliver To              |with    |tv!info.To                                                                        |
+|populate field        |Building                |with    |tv!info.Building                                                                  |
+|populate field        |Cube/Office/Lab Location|with    |tv!info.Lab                                                                       |
+|populate field        |Short Order Description |with    |tv!info.Lab                                                                       |
+|verify field          |Building                |contains|tv!info.Building                                                                  |
+|click on button       |tv!info.button                                                                                                      |

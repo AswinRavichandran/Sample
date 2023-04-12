@@ -1,0 +1,18 @@
+---
+Help: CM1
+Test
+---
+!define TEST_SYSTEM {slim}
+!define COMMAND_PATTERN {java -Dlog4j.debug -Dlog4j.configuration=file:\\\${automated.testing.home}\log4j.properties -cp %p %m}
+!path ${automated.testing.home}/**.jar
+             
+!*** Initialization
+!| script             |com.appiancorp.ps.automatedtest.fixture.SitesFixture                                                                                                                                                                      |
+|setup with           |CHROME                                                          |Browser                                                                                                                                                  |
+|note                 |set appian url to                                               |https://appiancoe.vuram.com/suite/sites/case-management-site                                                                                             |
+|set appian url to    |https://appiancoe.vuram.com/suite/sites/d2207vgotm-opportunity-tracker/page/record/record/lUBzu0pGQ7KFC472ru0S9VBT0BpSIrau_rxpwGUu0h4eq2X6R8Fe-AQhKm8sBcwPSFpPhs8FWaoFhz968ax2Dd8FvHPkFVINP1-Mg67eHsKlO8fcyN4/view/summary|
+|set appian version to|22.3                                                                                                                                                                                                                      |
+|set appian locale to |en_US                                                                                                                                                                                                                     |
+|login with username  |Akash@123                                                                                                                                                                                                                 |
+|verify field         |Status                                                          |contains                                                               |Under Investigation                                                              |
+|verify field         |                                                                |with                                                                   |Reinitiate                                                                       |

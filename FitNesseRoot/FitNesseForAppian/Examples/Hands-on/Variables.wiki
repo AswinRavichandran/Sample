@@ -1,0 +1,19 @@
+---
+Help: VirtualWareHouse
+Test
+---
+!define TEST_SYSTEM {slim}
+!define COMMAND_PATTERN {java -Dlog4j.debug -Dlog4j.configuration=file:\\\${automated.testing.home}\log4j.properties -cp %p %m}
+!path ${automated.testing.home}/**.jar
+             
+!*** Initialization
+!| script             |com.appiancorp.ps.automatedtest.fixture.SitesFixture                                    |
+|setup with           |CHROME              |Browser                               |
+|set appian url to    |https://appiancoe.vuram.com/suite/sites/as_virtualwarehouse|
+|set appian version to|22.3                                                       |
+|set appian locale to |en_US                                                      |
+|login with username  |Aswin@1234                                                 |
+|click on menu        |TASK                                                       |
+|click on link        |026[1]                                                     |
+|$VAR=                |get field           |IO                   |value           |
+|populate field       |Comments            |with value           |$VAR            |

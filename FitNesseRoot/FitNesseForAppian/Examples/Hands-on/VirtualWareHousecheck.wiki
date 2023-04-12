@@ -1,0 +1,22 @@
+---
+Help: Check commnd
+Test
+---
+!define TEST_SYSTEM {slim}
+!define COMMAND_PATTERN {java -Dlog4j.debug -Dlog4j.configuration=file:\\\${automated.testing.home}\log4j.properties -cp %p %m}
+!path ${automated.testing.home}/**.jar
+             
+!*** Initialization
+!| script              |com.appiancorp.ps.automatedtest.fixture.SitesFixture       |
+|setup with            |CHROME               |Browser                              |
+|set appian url to     |https://appiancoe.vuram.com/suite/sites/as_virtualwarehouse|
+|set appian version to |22.3                                                       |
+|set appian locale to  |en_US                                                      |
+|set screenshot path to|C:\FitNesse\Screenshot/                                    |
+|login with username   |Aswin@1234                                                 |
+|click on menu         |ORDER PARTS                                                |
+|populate field        |Deliver To           |with value           |123            |
+|get field             |Deliver To           |value                                |
+|show                  |get field            |Deliver To           |value          |
+|check                 |get field            |Deliver To           |value          |
+                                                       

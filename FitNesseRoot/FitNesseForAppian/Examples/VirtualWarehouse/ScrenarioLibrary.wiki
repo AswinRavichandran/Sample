@@ -1,0 +1,16 @@
+---
+Help: VirtualWareHouse
+---
+!| scenario           |Default                      |username                     |
+|setup with           |CHROME                       |browser                      |
+|set appian url to    |https://appiancoe.vuram.com/suite/sites/as_virtualwarehouse|
+|set appian version to|22.3                                                       |
+|set appian locale to |en_US                                                      |
+|login with username  |@username                                                  |
+
+!|scenario     |Enter Case Details with Deliver To|DeliverTo|with Short Order Description|ShortOrderDescription|with Building|Building|
+|populate field|Deliver To                        |with     |@DeliverTo                                                               |
+|populate field|Short Order Description           |with     |@ShortOrderDescription                                                   |
+|populate field|Description                       |with     |@Description                                                             |
+|populate field|Building                          |with     |@Building                                                                |
+

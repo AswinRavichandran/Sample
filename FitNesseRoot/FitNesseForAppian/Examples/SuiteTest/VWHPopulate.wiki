@@ -1,0 +1,28 @@
+---
+Help: Populate
+Test
+---
+!define COMMAND_PATTERN {java -Dlog4j.debug -Dlog4j.configuration=file:\\\${automated.testing.home}\log4j.properties -cp %p %m}
+!path ${automated.testing.home}/**.jar
+             
+!*** Initialization
+!|script|com.appiancorp.ps.automatedtest.fixture.SitesFixture|
+|sample |Aswin@1234                                          |
+
+!*** Navigation and Header details
+!|script                                                                                                                                                                     |
+|click on menu                     |ORDER PARTS                                                                                                                              |
+|Enter Case Details with Deliver To|Chennai|with Short Order Description|Tested|with Building|Shyamala Towers|with Dummy Reservation|[1]|with Product Group|CSBG|with IO|1234|
+
+!|script                                                           |
+|verify value with Deliver To|Chennai|with Building|Shyamala Towers|
+
+!|script                                                        |
+|get value with Deliver To|Chennai|with Building|Shyamala Towers|
+
+!|script                                                                                         |
+|Variable with Deliver To|Chennai|with Building|Shyamala Towers|with Short Order Description|$max|
+
+!|script                                                                                |
+|click button with SAVE DETAILS|SAVE DETAILS|with Dummy Reservation|Dummy Reservation[1]|
+

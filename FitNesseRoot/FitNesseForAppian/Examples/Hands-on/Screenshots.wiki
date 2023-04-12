@@ -1,0 +1,37 @@
+---
+Help: VirtualWareHouse
+Test
+---
+!define TEST_SYSTEM {slim}
+!define COMMAND_PATTERN {java -Dlog4j.debug -Dlog4j.configuration=file:\\\${automated.testing.home}\log4j.properties -cp %p %m}
+!path ${automated.testing.home}/**.jar
+             
+!*** Initialization
+!| script                     |com.appiancorp.ps.automatedtest.fixture.SitesFixture                                    |
+|setup with                   |CHROME           |Browser                                                               |
+|set appian url to            |https://appiancoe.vuram.com/suite/sites/as_virtualwarehouse                             |
+|set appian version to        |22.3                                                                                    |
+|set appian locale to         |en_US                                                                                   |
+|set screenshot path to       |C:\FitNesse\Screenshot/                                                                 |
+|login with username          |Aswin@1234                                                                              |
+|click on menu                |TASK                                                                                    |
+|click on grid                |[1]              |navigation    |next                                                   |
+|click on link                |026[1]                                                                                  |
+|verify field                 |Dummy Reservation|contains value|Yes                                                    |
+|set take error screenshots to|true                                                                                    |
+|take screenshot              |Screenshot                                                                              |
+|verify field                 |IO               |contains value|IO123407                                               |
+|verify field                 |Product Group    |contains value|Villach                                                |
+|verify field                 |Description      |contains value|Internal order for audit purpose 1                     |
+|verify field                 |CC               |contains value|CC001                                                  |
+|verify field                 |GL Account       |contains value|630100                                                 |
+|verify field                 |Sydney Project   |contains value|Yes                                                    |
+|verify field                 |Tool Down        |is not blank                                                          |
+|verify field                 |GL Account       |is not present                                                        |
+|set take error screenshots to|false                                                                                   |
+|verify button                |APPROVE          |is present                                                            |
+|verify button                |REJECT           |is enabled                                                            |
+|verify grid                  |[1]              |column        |Total Cost         |row|[1]|contains|110               |
+|verify grid                  |[2]              |column        |Action Performed By|row|[1]|contains|Aswin Ravichandran|
+|get grid                     |[1]              |row count                                                             |
+|wait for                     |7                |seconds                                                               |

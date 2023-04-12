@@ -1,0 +1,34 @@
+---
+Help: VWH
+Test
+---
+!define TEST_SYSTEM {slim}
+!define COMMAND_PATTERN {java -Dlog4j.debug -Dlog4j.configuration=file:\\\${automated.testing.home}\log4j.properties -cp %p %m}
+!path ${automated.testing.home}/**.jar
+             
+!*** Initialization
+
+!| script     |com.appiancorp.ps.automatedtest.fixture.SitesFixture|
+|sample       |Aswin@1234                                          |
+|click on menu|TASK                                                |
+***!
+
+!|script                                                                               |
+|click on link        |Approval[1]                                                     |
+|click on button      |GO BACK                                                         |
+|click on link        |Approval[1]                                                     |
+|click on button      |REASSIGN                                                        |
+|click on radio option|Choose from all assignees                                       |
+|populate field       |        |with|Aswin Ravichandran                                |
+|wait for             |10      |seconds                                                |
+|click on radio option|Choose from all users and groups                                |
+|populate field       |        |with|Aswin r|partially matching picker field suggestion|
+|wait for             |10      |seconds                                                |
+|wait for             |8       |seconds                                                |
+|click on button      |CANCEL                                                          |
+|click on button      |ACCEPT                                                          |
+|populate field       |Comments|with|N/A                                               |
+|click on button      |REJECT[2]                                                       |
+|click on button      |YES                                                             |
+
+

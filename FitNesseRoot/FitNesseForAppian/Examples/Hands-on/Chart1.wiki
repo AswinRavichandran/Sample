@@ -1,0 +1,24 @@
+---
+Help: Bar
+Test
+---
+!define TEST_SYSTEM {slim}
+!define COMMAND_PATTERN {java -Dlog4j.debug -Dlog4j.configuration=file:\\\${automated.testing.home}\log4j.properties -cp %p %m}
+!path ${automated.testing.home}/**.jar
+             
+!*** Initialization
+!| script              |com.appiancorp.ps.automatedtest.fixture.SitesFixture                                                                                                 |
+|scenario              |setup for test script for browser|CHROME|locale|en_US|version|22.3|url|https://appiancoe.vuram.com/suite/sites/d2207mgpt-project-tracker/page/reports|
+|setup with browser    |@browserType                                                                                                                                         |
+|set appian locale to  |@location                                                                                                                                            |
+|set appian version to |@versionNum                                                                                                                                          |
+|set appian url to     |@appianUrl                                                                                                                                           |
+|set timeout seconds to|20                                                                                                                                                   |
+|set start datetime                                                                                                                                                          |
+***!
+
+!*** 
+!|script                                                    |
+|wait for          |5 seconds                               |
+|click on bar chart|Region Wise Project Distribution|bar|[2]|
+***!

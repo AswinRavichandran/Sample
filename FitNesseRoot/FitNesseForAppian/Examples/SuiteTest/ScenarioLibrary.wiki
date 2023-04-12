@@ -1,0 +1,35 @@
+---
+Help: VWH
+---
+!| scenario           |sample                      |username                      |
+|setup with           |CHROME                      |browser                       |
+|set appian url to    |https://appiancoe.vuram.com/suite/sites/as_virtualwarehouse|
+|set appian version to|22.3                                                       |
+|set appian locale to |en_US                                                      |
+|login with username  |@username                                                  |
+
+!|scenario     |Enter Case Details with Deliver To|DeliverTo|with Short Order Description|ShortOrderDescription|with Building|Building|with Dummy Reservation|DummyReservation|with Product Group|Productgroup|with IO|IO|
+|populate field|Deliver To                        |with     |@DeliverTo                                                                                                                                                  |
+|populate field|Short Order Description           |with     |@ShortOrderDescription                                                                                                                                      |
+|populate field|Building                          |with     |@Building                                                                                                                                                   |
+|populate field|Product Group                     |with     |@Productgroup                                                                                                                                               |
+|populate field|IO                                |with     |@IO                         |partially matching picker field suggestion                                                                                     |
+
+
+!|scenario   |verify value with Deliver To|DeliverTo|with Building|Building|
+|verify field|Deliver To                  |contains |@DeliverTo            |
+|verify field|Building                    |contains |@Building             |
+
+
+!|scenario|get value with Deliver To|DeliverTo|with Building|Building|
+|get field|Deliver To               |value                           |
+|get field|Building                 |value                           |
+
+!|scenario     |Variable with Deliver To|DeliverTo |with Building|Building|with Short Order Description|ShortOrderDescription|
+|$max=         |get field               |Deliver To|value                                                                    |
+|populate field|Short Order Description |with      |$max                                                                     |
+
+!|scenario        |click button with SAVE DETAILS|SAVEDETAILS|with Dummy Reservation|DummyReservation|
+|click on checkbox|@DummyReservation                                                                 |
+|click on button  |@SAVEDETAILS                                                                      |
+

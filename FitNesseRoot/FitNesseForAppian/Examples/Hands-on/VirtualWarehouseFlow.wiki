@@ -1,0 +1,124 @@
+---
+Help: All commands
+Test
+---
+!define TEST_SYSTEM {slim}
+!define COMMAND_PATTERN {java -Dlog4j.debug -Dlog4j.configuration=file:\\\${automated.testing.home}\log4j.properties -cp %p %m}
+!path ${automated.testing.home}/**.jar
+             
+!*** Initialization
+!| script              |com.appiancorp.ps.automatedtest.fixture.SitesFixture       |
+|setup with            |CHROME                       |Browser                      |
+|set appian url to     |https://appiancoe.vuram.com/suite/sites/as_virtualwarehouse|
+|set appian version to |22.3                                                       |
+|set appian locale to  |en_US                                                      |
+|login with username   |Aswin@123                                                  |
+|wait for working                                                                  |
+|set screenshot path to|C:\FitNesse\Screenshot/                                    |
+***!
+
+!*** Navigation and Header details
+!|script                                                                                                 |
+|click on menu           |ORDER PARTS                                                                    |
+|$VAR=                   |get regex     |Initiation Form|group|[1]            |from form title           |
+|click on checkbox option|[1]                                                                            |
+|verify box              |Header Details|is present                                                      |
+|populate field          |[2]           |with           |CSBG                                            |
+|clear field             |IO                                                                             |
+|wait for progress bar                                                                                   |
+|populate field          |IO            |with           |1234 |partially matching picker field suggestion|
+|clear field             |CC                                                                             |
+|populate field          |CC            |with           |C    |partially matching picker field suggestion|
+|verify field            |IO            |contains       |IO123407                                        |
+|verify field            |Description[1]|contains       |Internal order for audit purpose 1              |
+|verify field            |Description[2]|contains       |Taiwan                                          |
+***!
+
+!*** SELECT FOR RADIO BUTTONS
+!|script                                                    |
+|click on radio option|1020                                 |
+|click on radio option|630100                               |
+|ensure               |verify button|SAVE DETAILS|is present|
+|verify tag field     |IO           |is present             |
+|click on button      |SAVE DETAILS                         |
+|take screenshot      |Screenshot                           |
+***!
+
+!*** populate field with Variable
+!|script                                                                           |
+|note             |populate field         |Short Order Description|with value |$VAR|
+|note             |Var is Header                                                   |
+|$random_username=|get random string      |10                                      |
+|populate field   |Short Order Description|with value             |$random_username|
+|verify box       |Location Details       |is not present                          |
+
+!*** Checkbox
+!|script                     |
+|click on checkbox option|[2]|
+|click on checkbox option|[3]|
+|click on checkbox option|[3]|
+|click on checkbox option|[4]|
+***!
+
+!*** clear
+!|script                                                                                                                                                   |
+|clear field       |Deliver To                                                                                                                             |
+|clear field       |Building                                                                                                                               |
+|clear field       |Cube/Office/Lab Location                                                                                                               |
+|populate field    |Deliver To              |with value|$random_username                                                                                   |
+|$random_username1=|get random string       |110                                                                                                           |
+|populate field    |Building                |with value|$random_username1                                                                                  |
+|get field         |Building                |value                                                                                                         |
+|note              |verify field            |Building  |contains validation message|The text cannot be longer than 100 characters. 121 characters received.|
+|populate field    |Cube/Office/Lab Location|with value|$random_username                                                                                   |
+|click on button   |SAVE LOCATION                                                                                                                          |
+***!
+
+!*** Grid
+!|script                                                                                                                    |
+|populate grid  |[1]                |column  |Part Number  |row|[1]|with      |np|partially matching picker field suggestion|
+|verify button  |PROCEED TO CHECKOUT|is enabled                                                                             |
+|populate grid  |[1]                |column  |Description  |row|[1]|with      |N/A                                          |
+|populate grid  |[1]                |column  |Commodity    |row|[1]|with      |OTHER                                        |
+|populate grid  |[1]                |column  |Std Cost     |row|[1]|with      |45                                           |
+|populate grid  |[1]                |column  |Qty          |row|[1]|with      |2                                            |
+|populate grid  |[1]                |column  |Need Date    |row|[1]|with      |06/06/2023                                   |
+|clear grid     |[1]                |column  |Need Date    |row|[1]                                                         |
+|populate grid  |[1]                |column  |Need Date    |row|[1]|with      |06/06/2023                                   |
+|populate grid  |[1]                |column  |Addtl. Fee   |row|[1]|with      |20                                           |
+|populate grid  |[1]                |column  |Delivery Type|row|[1]|with      |Stock                                        |
+|populate grid  |[1]                |column  |Cust. Ship   |row|[1]|with value|                                             |
+|populate grid  |[1]                |column  |Critical     |row|[1]|with value|                                             |
+|populate grid  |[1]                |column  |RPM          |row|[1]|with value|                                             |
+|click on grid  |[1]                |add row link                                                                           |
+|wait for       |10                 |seconds                                                                                |
+|click on grid  |[1]                |column  |[14]         |row|[2]                                                         |
+|get grid       |[1]                |row count                                                                              |
+|wait for       |10                 |seconds                                                                                |
+|verify field   |Building           |contains|eGzL27cw35                                                                    |
+|verify field   |Building           |is not blank                                                                           |
+|wait for       |5                  |seconds                                                                                |
+|click on button|PROCEED TO CHECKOUT                                                                                        |
+|wait for       |3                  |seconds                                                                                |
+|take screenshot|Screenshot_1                                                                                               |
+|click on button|OK                                                                                                         |
+***!
+
+!*** sort
+!|script                                     |
+|click on menu             |VIRTUAL WAREHOUSE|
+|sort record grid by column|Part Number      |
+|sort record grid by column|Order Status     |
+|sort record grid by column|Internal Order   |
+|sort record grid by column|Requested On     |
+|sort record grid by column|Part Description |
+|refresh                                     |
+***!
+
+!*** logout
+!|script|
+|logout |
+**!
+
+
+
