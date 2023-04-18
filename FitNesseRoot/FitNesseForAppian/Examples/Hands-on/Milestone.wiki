@@ -16,3 +16,4 @@ Test
 |verify field         |Status                                                                |contains                       |Under Investigation                                                                                                |
 |verify field         |                                                                      |with                           |Reinitiate                                                                                                         |
 |logout                                                                                                                                                                                                                                          |
+|tear down                                                    |
