@@ -22,3 +22,7 @@ Test
 |wait for          |5 seconds                               |
 |click on bar chart|Region Wise Project Distribution|bar|[2]|
 ***!
+
+!|script|
+|logout|
+|tear down|
