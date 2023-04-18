@@ -25,4 +25,3 @@ Test
 
 !|script|
 |logout|
-|tear down|
