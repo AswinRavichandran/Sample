@@ -1,0 +1,559 @@
+<?xml version="1.0"?>
+<suiteResults>
+  <FitNesseVersion>v20221219</FitNesseVersion>
+  <rootPath>FitNesseForAppian.Examples.SuiteTest</rootPath>
+  <pageHistoryReference>
+    <name>FitNesseForAppian.Examples.SuiteTest.RejectionFlow</name>
+    <date>2023-04-12T17:33:10+05:30</date>
+    <pageHistoryLink>FitNesseForAppian.Examples.SuiteTest.RejectionFlow?pageHistory&amp;resultDate=20230412173310</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>6</exceptions>
+    </counts>
+    <runTimeInMillis>130642</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>FitNesseForAppian.Examples.SuiteTest.VWHPopulate</name>
+    <date>2023-04-12T17:35:20+05:30</date>
+    <pageHistoryLink>FitNesseForAppian.Examples.SuiteTest.VWHPopulate?pageHistory&amp;resultDate=20230412173520</pageHistoryLink>
+    <counts>
+      <right>2</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>48916</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>FitNesseForAppian.Examples.SuiteTest.VWHSample</name>
+    <date>2023-04-12T17:36:09+05:30</date>
+    <pageHistoryLink>FitNesseForAppian.Examples.SuiteTest.VWHSample?pageHistory&amp;resultDate=20230412173609</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>59093</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>FitNesseForAppian.Examples.SuiteTest.VWHfirstrun</name>
+    <date>2023-04-12T17:37:08+05:30</date>
+    <pageHistoryLink>FitNesseForAppian.Examples.SuiteTest.VWHfirstrun?pageHistory&amp;resultDate=20230412173708</pageHistoryLink>
+    <counts>
+      <right>6</right>
+      <wrong>4</wrong>
+      <ignores>0</ignores>
+      <exceptions>3</exceptions>
+    </counts>
+    <runTimeInMillis>183273</runTimeInMillis>
+  </pageHistoryReference>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>java -Dlog4j.debug -Dlog4j.configuration=file:\\\C:\FitNesse\log4j.properties -cp C:\FitNesse\lib\accessors-smart-2.4.9.jar;C:\FitNesse\lib\asm-9.3.jar;C:\FitNesse\lib\async-http-client-2.12.3.jar;C:\FitNesse\lib\async-http-client-netty-utils-2.12.3.jar;C:\FitNesse\lib\auto-common-1.2.jar;C:\FitNesse\lib\auto-service-1.0.1.jar;C:\FitNesse\lib\auto-service-annotations-1.0.1.jar;C:\FitNesse\lib\byte-buddy-1.14.2.jar;C:\FitNesse\lib\checker-qual-3.12.0.jar;C:\FitNesse\lib\commons-codec-1.15.jar;C:\FitNesse\lib\commons-exec-1.3.jar;C:\FitNesse\lib\commons-io-2.11.0.jar;C:\FitNesse\lib\commons-lang3-3.12.0.jar;C:\FitNesse\lib\commons-text-1.10.0.jar;C:\FitNesse\lib\diffutils-1.3.0.jar;C:\FitNesse\lib\error_prone_annotations-2.11.0.jar;C:\FitNesse\lib\failsafe-3.3.1.jar;C:\FitNesse\lib\failureaccess-1.0.1.jar;C:\FitNesse\lib\fitnesse-20221219-standalone.jar;C:\FitNesse\lib\google-analytics-java-2.0.0.jar;C:\FitNesse\lib\gson-2.10.1.jar;C:\FitNesse\lib\guava-31.1-jre.jar;C:\FitNesse\lib\htmllexer-2.1.jar;C:\FitNesse\lib\htmlparser-2.1.jar;C:\FitNesse\lib\httpclient-4.5.13.jar;C:\FitNesse\lib\httpcore-4.4.13.jar;C:\FitNesse\lib\j2objc-annotations-1.3.jar;C:\FitNesse\lib\jackson-annotations-2.14.2.jar;C:\FitNesse\lib\jackson-core-2.14.2.jar;C:\FitNesse\lib\jackson-databind-2.14.2.jar;C:\FitNesse\lib\jakarta.activation-1.2.2.jar;C:\FitNesse\lib\jcl-over-slf4j-1.7.25.jar;C:\FitNesse\lib\jcommander-1.82.jar;C:\FitNesse\lib\json-20230227.jar;C:\FitNesse\lib\json-path-2.8.0.jar;C:\FitNesse\lib\json-smart-2.4.10.jar;C:\FitNesse\lib\jsr305-3.0.2.jar;C:\FitNesse\lib\jtoml-2.0.0.jar;C:\FitNesse\lib\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\FitNesse\lib\log4j-api-2.20.0.jar;C:\FitNesse\lib\log4j-core-2.20.0.jar;C:\FitNesse\lib\netty-buffer-4.1.90.Final.jar;C:\FitNesse\lib\netty-codec-4.1.90.Final.jar;C:\FitNesse\lib\netty-codec-http-4.1.90.Final.jar;C:\FitNesse\lib\netty-codec-socks-4.1.90.Final.jar;C:\FitNesse\lib\netty-common-4.1.90.Final.jar;C:\FitNesse\lib\netty-handler-4.1.90.Final.jar;C:\FitNesse\lib\netty-handler-proxy-4.1.90.Final.jar;C:\FitNesse\lib\netty-reactive-streams-2.0.4.jar;C:\FitNesse\lib\netty-resolver-4.1.90.Final.jar;C:\FitNesse\lib\netty-transport-4.1.90.Final.jar;C:\FitNesse\lib\netty-transport-classes-epoll-4.1.90.Final.jar;C:\FitNesse\lib\netty-transport-classes-kqueue-4.1.90.Final.jar;C:\FitNesse\lib\netty-transport-native-epoll-4.1.90.Final-linux-x86_64.jar;C:\FitNesse\lib\netty-transport-native-epoll-4.1.90.Final.jar;C:\FitNesse\lib\netty-transport-native-kqueue-4.1.90.Final-osx-x86_64.jar;C:\FitNesse\lib\netty-transport-native-kqueue-4.1.90.Final.jar;C:\FitNesse\lib\netty-transport-native-unix-common-4.1.90.Final.jar;C:\FitNesse\lib\opentelemetry-api-1.24.0.jar;C:\FitNesse\lib\opentelemetry-api-events-1.24.0-alpha.jar;C:\FitNesse\lib\opentelemetry-api-logs-1.24.0-alpha.jar;C:\FitNesse\lib\opentelemetry-context-1.24.0.jar;C:\FitNesse\lib\opentelemetry-exporter-logging-1.24.0.jar;C:\FitNesse\lib\opentelemetry-sdk-1.24.0.jar;C:\FitNesse\lib\opentelemetry-sdk-common-1.24.0.jar;C:\FitNesse\lib\opentelemetry-sdk-extension-autoconfigure-1.24.0-alpha.jar;C:\FitNesse\lib\opentelemetry-sdk-extension-autoconfigure-spi-1.24.0.jar;C:\FitNesse\lib\opentelemetry-sdk-logs-1.24.0-alpha.jar;C:\FitNesse\lib\opentelemetry-sdk-metrics-1.24.0.jar;C:\FitNesse\lib\opentelemetry-sdk-trace-1.24.0.jar;C:\FitNesse\lib\opentelemetry-semconv-1.24.0-alpha.jar;C:\FitNesse\lib\reactive-streams-1.0.3.jar;C:\FitNesse\lib\selenium-api-4.8.2.jar;C:\FitNesse\lib\selenium-chrome-driver-4.8.2.jar;C:\FitNesse\lib\selenium-chromium-driver-4.8.2.jar;C:\FitNesse\lib\selenium-devtools-v109-4.8.2.jar;C:\FitNesse\lib\selenium-devtools-v110-4.8.2.jar;C:\FitNesse\lib\selenium-devtools-v111-4.8.2.jar;C:\FitNesse\lib\selenium-devtools-v85-4.8.2.jar;C:\FitNesse\lib\selenium-edge-driver-4.8.2.jar;C:\FitNesse\lib\selenium-firefox-driver-4.8.2.jar;C:\FitNesse\lib\selenium-http-4.8.2.jar;C:\FitNesse\lib\selenium-ie-driver-4.8.2.jar;C:\FitNesse\lib\selenium-java-4.8.2.jar;C:\FitNesse\lib\selenium-json-4.8.2.jar;C:\FitNesse\lib\selenium-manager-4.8.2.jar;C:\FitNesse\lib\selenium-remote-driver-4.8.2.jar;C:\FitNesse\lib\selenium-safari-driver-4.8.2.jar;C:\FitNesse\lib\selenium-support-4.8.2.jar;C:\FitNesse\lib\slf4j-api-1.7.36.jar;C:\FitNesse\lib\slf4j-jdk14-1.7.36.jar;C:\FitNesse\lib\velocity-engine-core-2.3.jar;C:\FitNesse\lib\appian\appian-selenium-api-23.1.1.jar;C:\FitNesse\lib\fitnesse-20221219-standalone.jar fitnesse.slim.SlimService 1</command>
+    <exitCode>0</exitCode>
+    <stdOut>17:33:58.584 [main] ERROR com.appiancorp.ps.automatedtest.exception.ExceptionBuilder - Wait for Button - GO BACK
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //button[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'go back') and not(contains(@class, 'button-disabled'))] (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87) ~[selenium-support-4.8.2.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231) ~[selenium-support-4.8.2.jar:?]
+	at com.appiancorp.ps.automatedtest.tempo.interfaces.TempoButton.waitFor(TempoButton.java:70) [appian-selenium-api-23.1.1.jar:?]
+	at com.appiancorp.ps.automatedtest.fixture.TempoFixture.clickOnButton(TempoFixture.java:2449) [appian-selenium-api-23.1.1.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_202]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_202]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_202]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_202]
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.methodInvoke(SimpleInteraction.java:322) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.callMethod(SimpleInteraction.java:307) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.invokeMethod(SimpleInteraction.java:290) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.findAndInvoke(SimpleInteraction.java:217) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:139) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:112) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.instructions.CallAndOptionalAssignInstruction.executeInternal(CallAndOptionalAssignInstruction.java:30) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.handle(SlimService.java:169) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:177) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.accept(SlimService.java:139) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:92) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.main(SlimService.java:57) [fitnesse-20221219-standalone.jar:20221219]
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'go back') and not(contains(@class, 'button-disabled'))]"}
+  (Session info: chrome=111.0.5563.148)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.2', revision: '826dbfc730'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [887cb6fc438875f44ebb4ef43afb2b06, findElement {using=xpath, value=//button[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'go back') and not(contains(@class, 'button-disabled'))]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\u416984\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63464}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63464/devtoo..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 887cb6fc438875f44ebb4ef43afb2b06
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[?:1.8.0_202]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[?:1.8.0_202]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:174) ~[selenium-support-4.8.2.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171) ~[selenium-support-4.8.2.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208) ~[selenium-support-4.8.2.jar:?]
+	... 28 more
+
+17:34:09.042 [main] ERROR com.appiancorp.ps.automatedtest.exception.ExceptionBuilder - Wait for Link - Approval[1]
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: (//a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'approval')] | //a//*[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'approval')]/..)[1] (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87) ~[selenium-support-4.8.2.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231) ~[selenium-support-4.8.2.jar:?]
+	at com.appiancorp.ps.automatedtest.tempo.interfaces.TempoLink.waitFor(TempoLink.java:56) [appian-selenium-api-23.1.1.jar:?]
+	at com.appiancorp.ps.automatedtest.fixture.TempoFixture.clickOnLink(TempoFixture.java:2262) [appian-selenium-api-23.1.1.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_202]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_202]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_202]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_202]
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.methodInvoke(SimpleInteraction.java:322) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.callMethod(SimpleInteraction.java:307) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.invokeMethod(SimpleInteraction.java:290) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.findAndInvoke(SimpleInteraction.java:217) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:139) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:112) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.instructions.CallAndOptionalAssignInstruction.executeInternal(CallAndOptionalAssignInstruction.java:30) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.handle(SlimService.java:169) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:177) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.accept(SlimService.java:139) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:92) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.main(SlimService.java:57) [fitnesse-20221219-standalone.jar:20221219]
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'approval')] | //a//*[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'approval')]/..)[1]"}
+  (Session info: chrome=111.0.5563.148)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.2', revision: '826dbfc730'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [887cb6fc438875f44ebb4ef43afb2b06, findElement {using=xpath, value=(//a[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'approval')] | //a//*[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'approval')]/..)[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\u416984\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63464}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63464/devtoo..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 887cb6fc438875f44ebb4ef43afb2b06
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[?:1.8.0_202]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[?:1.8.0_202]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:174) ~[selenium-support-4.8.2.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171) ~[selenium-support-4.8.2.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208) ~[selenium-support-4.8.2.jar:?]
+	... 28 more
+
+17:34:58.949 [main] ERROR com.appiancorp.ps.automatedtest.exception.ExceptionBuilder - Wait for Button - ACCEPT
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //button[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'accept') and not(contains(@class, 'button-disabled'))] (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87) ~[selenium-support-4.8.2.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231) ~[selenium-support-4.8.2.jar:?]
+	at com.appiancorp.ps.automatedtest.tempo.interfaces.TempoButton.waitFor(TempoButton.java:70) [appian-selenium-api-23.1.1.jar:?]
+	at com.appiancorp.ps.automatedtest.fixture.TempoFixture.clickOnButton(TempoFixture.java:2449) [appian-selenium-api-23.1.1.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_202]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_202]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_202]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_202]
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.methodInvoke(SimpleInteraction.java:322) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.callMethod(SimpleInteraction.java:307) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.invokeMethod(SimpleInteraction.java:290) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.findAndInvoke(SimpleInteraction.java:217) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:139) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:112) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.instructions.CallAndOptionalAssignInstruction.executeInternal(CallAndOptionalAssignInstruction.java:30) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.handle(SlimService.java:169) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:177) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.accept(SlimService.java:139) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:92) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.main(SlimService.java:57) [fitnesse-20221219-standalone.jar:20221219]
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'accept') and not(contains(@class, 'button-disabled'))]"}
+  (Session info: chrome=111.0.5563.148)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.2', revision: '826dbfc730'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [887cb6fc438875f44ebb4ef43afb2b06, findElement {using=xpath, value=//button[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'accept') and not(contains(@class, 'button-disabled'))]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\u416984\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63464}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63464/devtoo..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 887cb6fc438875f44ebb4ef43afb2b06
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[?:1.8.0_202]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[?:1.8.0_202]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:174) ~[selenium-support-4.8.2.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171) ~[selenium-support-4.8.2.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208) ~[selenium-support-4.8.2.jar:?]
+	... 28 more
+
+17:35:00.084 [main] ERROR com.appiancorp.ps.automatedtest.exception.ExceptionBuilder - Populate Field - Comments - N/A
+org.openqa.selenium.InvalidElementStateException: invalid element state: Element is not currently interactable and may not be manipulated
+  (Session info: chrome=111.0.5563.148)
+Build info: version: '4.8.2', revision: '826dbfc730'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [887cb6fc438875f44ebb4ef43afb2b06, clearElement {id=dfe51f85-28b8-4851-b1d8-73a0d56f4ed6}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\u416984\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63464}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63464/devtoo..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on WINDOWS (887cb6fc438875f44ebb4ef43afb2b06)] -&gt; xpath: //*[(self::label or self::span) and contains(@class, 'FieldLayout---field_label') and starts-with(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'comments')]/parent::div/parent::div]] -&gt; xpath: .//textarea[contains(@class,'ParagraphWidget---textarea')]]
+Session ID: 887cb6fc438875f44ebb4ef43afb2b06
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_202]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[?:1.8.0_202]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[?:1.8.0_202]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[?:1.8.0_202]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:132) ~[selenium-remote-driver-4.8.2.jar:?]
+	at com.appiancorp.ps.automatedtest.tempo.interfaces.TempoParagraphField.clear(TempoParagraphField.java:117) ~[appian-selenium-api-23.1.1.jar:?]
+	at com.appiancorp.ps.automatedtest.tempo.interfaces.TempoParagraphField.populate(TempoParagraphField.java:76) ~[appian-selenium-api-23.1.1.jar:?]
+	at com.appiancorp.ps.automatedtest.tempo.interfaces.TempoFieldFactory.populate(TempoFieldFactory.java:89) [appian-selenium-api-23.1.1.jar:?]
+	at com.appiancorp.ps.automatedtest.tempo.interfaces.TempoFieldFactory.populateMultiple(TempoFieldFactory.java:56) [appian-selenium-api-23.1.1.jar:?]
+	at com.appiancorp.ps.automatedtest.tempo.interfaces.TempoFieldFactory.populateMultiple(TempoFieldFactory.java:43) [appian-selenium-api-23.1.1.jar:?]
+	at com.appiancorp.ps.automatedtest.fixture.TempoFixture.populateFieldWith(TempoFixture.java:1180) [appian-selenium-api-23.1.1.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_202]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_202]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_202]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_202]
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.methodInvoke(SimpleInteraction.java:322) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.callMethod(SimpleInteraction.java:307) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.invokeMethod(SimpleInteraction.java:290) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.findAndInvoke(SimpleInteraction.java:217) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:139) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:112) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.instructions.CallAndOptionalAssignInstruction.executeInternal(CallAndOptionalAssignInstruction.java:30) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.handle(SlimService.java:169) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:177) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.accept(SlimService.java:139) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:92) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.main(SlimService.java:57) [fitnesse-20221219-standalone.jar:20221219]
+
+17:35:10.347 [main] ERROR com.appiancorp.ps.automatedtest.exception.ExceptionBuilder - Wait for Button - REJECT[2]
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: (//button[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'reject') and not(contains(@class, 'button-disabled'))])[2] (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87) ~[selenium-support-4.8.2.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231) ~[selenium-support-4.8.2.jar:?]
+	at com.appiancorp.ps.automatedtest.tempo.interfaces.TempoButton.waitFor(TempoButton.java:70) [appian-selenium-api-23.1.1.jar:?]
+	at com.appiancorp.ps.automatedtest.fixture.TempoFixture.clickOnButton(TempoFixture.java:2449) [appian-selenium-api-23.1.1.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_202]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_202]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_202]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_202]
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.methodInvoke(SimpleInteraction.java:322) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.callMethod(SimpleInteraction.java:307) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.invokeMethod(SimpleInteraction.java:290) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.findAndInvoke(SimpleInteraction.java:217) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:139) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:112) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.instructions.CallAndOptionalAssignInstruction.executeInternal(CallAndOptionalAssignInstruction.java:30) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.handle(SlimService.java:169) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:177) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.accept(SlimService.java:139) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:92) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.main(SlimService.java:57) [fitnesse-20221219-standalone.jar:20221219]
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//button[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'reject') and not(contains(@class, 'button-disabled'))])[2]"}
+  (Session info: chrome=111.0.5563.148)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.2', revision: '826dbfc730'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [887cb6fc438875f44ebb4ef43afb2b06, findElement {using=xpath, value=(//button[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'reject') and not(contains(@class, 'button-disabled'))])[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\u416984\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63464}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63464/devtoo..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 887cb6fc438875f44ebb4ef43afb2b06
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[?:1.8.0_202]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[?:1.8.0_202]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:174) ~[selenium-support-4.8.2.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171) ~[selenium-support-4.8.2.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208) ~[selenium-support-4.8.2.jar:?]
+	... 28 more
+
+17:35:20.629 [main] ERROR com.appiancorp.ps.automatedtest.exception.ExceptionBuilder - Wait for Button - YES
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //button[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'yes') and not(contains(@class, 'button-disabled'))] (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87) ~[selenium-support-4.8.2.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231) ~[selenium-support-4.8.2.jar:?]
+	at com.appiancorp.ps.automatedtest.tempo.interfaces.TempoButton.waitFor(TempoButton.java:70) [appian-selenium-api-23.1.1.jar:?]
+	at com.appiancorp.ps.automatedtest.fixture.TempoFixture.clickOnButton(TempoFixture.java:2449) [appian-selenium-api-23.1.1.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_202]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_202]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_202]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_202]
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.methodInvoke(SimpleInteraction.java:322) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.callMethod(SimpleInteraction.java:307) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.invokeMethod(SimpleInteraction.java:290) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.findAndInvoke(SimpleInteraction.java:217) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:139) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:112) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.instructions.CallAndOptionalAssignInstruction.executeInternal(CallAndOptionalAssignInstruction.java:30) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.handle(SlimService.java:169) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:177) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.accept(SlimService.java:139) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:92) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.main(SlimService.java:57) [fitnesse-20221219-standalone.jar:20221219]
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'yes') and not(contains(@class, 'button-disabled'))]"}
+  (Session info: chrome=111.0.5563.148)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.2', revision: '826dbfc730'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [887cb6fc438875f44ebb4ef43afb2b06, findElement {using=xpath, value=//button[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'yes') and not(contains(@class, 'button-disabled'))]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\u416984\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63464}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63464/devtoo..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 887cb6fc438875f44ebb4ef43afb2b06
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[?:1.8.0_202]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[?:1.8.0_202]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344) ~[selenium-remote-driver-4.8.2.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:174) ~[selenium-support-4.8.2.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171) ~[selenium-support-4.8.2.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208) ~[selenium-support-4.8.2.jar:?]
+	... 28 more
+
+17:38:08.763 [main] ERROR com.appiancorp.ps.automatedtest.exception.ExceptionBuilder - Populate Field - CC - C
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[contains(@class,'TetherComponent---sailcontents') and contains(@class,'PickerWidget---picker_suggestions')]//p[not(p) and not(contains(text(),'Searching'))][descendant-or-self::*[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'c')]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.8.2', revision: '826dbfc730'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\u416984\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63720}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63720/devtoo..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4e4129c5a85f5ff6d109040e9d2ef24d
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87) ~[selenium-support-4.8.2.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231) ~[selenium-support-4.8.2.jar:?]
+	at com.appiancorp.ps.automatedtest.tempo.interfaces.TempoPickerFieldSuggestion.waitFor(TempoPickerFieldSuggestion.java:33) ~[appian-selenium-api-23.1.1.jar:?]
+	at com.appiancorp.ps.automatedtest.tempo.interfaces.TempoPickerField.populate(TempoPickerField.java:67) ~[appian-selenium-api-23.1.1.jar:?]
+	at com.appiancorp.ps.automatedtest.tempo.interfaces.TempoFieldFactory.populate(TempoFieldFactory.java:87) [appian-selenium-api-23.1.1.jar:?]
+	at com.appiancorp.ps.automatedtest.tempo.interfaces.TempoFieldFactory.populateMultiple(TempoFieldFactory.java:56) [appian-selenium-api-23.1.1.jar:?]
+	at com.appiancorp.ps.automatedtest.fixture.TempoFixture.populateFieldWithContains(TempoFixture.java:1215) [appian-selenium-api-23.1.1.jar:?]
+	at com.appiancorp.ps.automatedtest.fixture.TempoFixture.populateFieldWithPartiallyMatchingPickerFieldSuggestion(TempoFixture.java:1198) [appian-selenium-api-23.1.1.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_202]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_202]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_202]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_202]
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.methodInvoke(SimpleInteraction.java:322) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.callMethod(SimpleInteraction.java:307) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.invokeMethod(SimpleInteraction.java:290) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.findAndInvoke(SimpleInteraction.java:217) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:139) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:112) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.instructions.CallAndOptionalAssignInstruction.executeInternal(CallAndOptionalAssignInstruction.java:30) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.handle(SlimService.java:169) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:177) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.accept(SlimService.java:139) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:92) [fitnesse-20221219-standalone.jar:20221219]
+	at fitnesse.slim.SlimService.main(SlimService.java:57) [fitnesse-20221219-standalone.jar:20221219]
+
+</stdOut>
+    <stdErr>DEBUG StatusLogger Using ShutdownCallbackRegistry class org.apache.logging.log4j.core.util.DefaultShutdownCallbackRegistry
+DEBUG StatusLogger Took 0.107077 seconds to load 225 plugins from sun.misc.Launcher$AppClassLoader@1d44bcfa
+DEBUG StatusLogger PluginManager 'Lookup' found 16 plugins
+DEBUG StatusLogger AsyncLogger.ThreadNameStrategy=UNCACHED (user specified null, default is UNCACHED)
+TRACE StatusLogger Using default SystemClock for timestamps.
+DEBUG StatusLogger org.apache.logging.log4j.core.util.SystemClock does not support precise timestamps.
+DEBUG StatusLogger PluginManager 'Lookup' found 16 plugins
+DEBUG StatusLogger PluginManager 'Converter' found 45 plugins
+DEBUG StatusLogger Starting OutputStreamManager SYSTEM_OUT.false.false-1
+DEBUG StatusLogger Starting LoggerContext[name=1d44bcfa, org.apache.logging.log4j.core.LoggerContext@6a396c1e]...
+DEBUG StatusLogger Reconfiguration started for context[name=1d44bcfa] at URI null (org.apache.logging.log4j.core.LoggerContext@6a396c1e) with optional ClassLoader: null
+DEBUG StatusLogger PluginManager 'Lookup' found 16 plugins
+DEBUG StatusLogger PluginManager 'ConfigurationFactory' found 4 plugins
+DEBUG StatusLogger PluginManager 'Lookup' found 16 plugins
+DEBUG StatusLogger PluginManager 'Lookup' found 16 plugins
+DEBUG StatusLogger Missing dependencies for Yaml support, ConfigurationFactory org.apache.logging.log4j.core.config.yaml.YamlConfigurationFactory is inactive
+DEBUG StatusLogger PluginManager 'Lookup' found 16 plugins
+DEBUG StatusLogger PluginManager 'Lookup' found 16 plugins
+DEBUG StatusLogger Using configurationFactory org.apache.logging.log4j.core.config.ConfigurationFactory$Factory@ba8d91c
+INFO StatusLogger Unable to locate file file:/C:/FitNesse/log4j.properties, ignoring.
+INFO StatusLogger Unable to locate file file:/C:/FitNesse/log4j.properties, ignoring.
+ERROR StatusLogger Reconfiguration failed: No configuration found for '1d44bcfa' at 'null' in 'null'
+DEBUG StatusLogger Shutdown hook enabled. Registering a new one.
+DEBUG StatusLogger LoggerContext[name=1d44bcfa, org.apache.logging.log4j.core.LoggerContext@6a396c1e] started OK.
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/C:/FitNesse/lib/fitnesse-20221219-standalone.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/C:/FitNesse/lib/slf4j-jdk14-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.JDK14LoggerFactory]
+ChromeDriver was started successfully.
+
+TRACE StatusLogger Using default SystemClock for timestamps.
+DEBUG StatusLogger org.apache.logging.log4j.core.util.SystemClock does not support precise timestamps.
+org.openqa.selenium.InvalidElementStateException: invalid element state: Element is not currently interactable and may not be manipulated
+  (Session info: chrome=111.0.5563.148)
+Build info: version: '4.8.2', revision: '826dbfc730'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [887cb6fc438875f44ebb4ef43afb2b06, clearElement {id=dfe51f85-28b8-4851-b1d8-73a0d56f4ed6}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\u416984\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63464}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63464/devtoo..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on WINDOWS (887cb6fc438875f44ebb4ef43afb2b06)] -&gt; xpath: //*[(self::label or self::span) and contains(@class, 'FieldLayout---field_label') and starts-with(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'comments')]/parent::div/parent::div]] -&gt; xpath: .//textarea[contains(@class,'ParagraphWidget---textarea')]]
+Session ID: 887cb6fc438875f44ebb4ef43afb2b06
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:132)
+	at com.appiancorp.ps.automatedtest.tempo.interfaces.TempoParagraphField.clear(TempoParagraphField.java:117)
+	at com.appiancorp.ps.automatedtest.tempo.interfaces.TempoParagraphField.populate(TempoParagraphField.java:76)
+	at com.appiancorp.ps.automatedtest.tempo.interfaces.TempoFieldFactory.populate(TempoFieldFactory.java:89)
+	at com.appiancorp.ps.automatedtest.tempo.interfaces.TempoFieldFactory.populateMultiple(TempoFieldFactory.java:56)
+	at com.appiancorp.ps.automatedtest.tempo.interfaces.TempoFieldFactory.populateMultiple(TempoFieldFactory.java:43)
+	at com.appiancorp.ps.automatedtest.fixture.TempoFixture.populateFieldWith(TempoFixture.java:1180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.methodInvoke(SimpleInteraction.java:322)
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.callMethod(SimpleInteraction.java:307)
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.invokeMethod(SimpleInteraction.java:290)
+	at fitnesse.slim.fixtureInteraction.SimpleInteraction.findAndInvoke(SimpleInteraction.java:217)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:139)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:112)
+	at fitnesse.slim.instructions.CallAndOptionalAssignInstruction.executeInternal(CallAndOptionalAssignInstruction.java:30)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49)
+	at fitnesse.slim.SlimService.handle(SlimService.java:169)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:177)
+	at fitnesse.slim.SlimService.accept(SlimService.java:139)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:92)
+	at fitnesse.slim.SlimService.main(SlimService.java:57)
+ChromeDriver was started successfully.
+
+ChromeDriver was started successfully.
+
+ChromeDriver was started successfully.
+
+</stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>1</right>
+    <wrong>1</wrong>
+    <ignores>1</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>437324</totalRunTimeInMillis>
+</suiteResults>
+

@@ -14,20 +14,20 @@ Test
 ***!
 
 !*** Navigation and Header details
-!|script                                                                                                 |
-|click on menu           |ORDER PARTS                                                                    |
-|$VAR=                   |get regex     |Initiation Form|group|[1]            |from form title           |
-|click on checkbox option|[1]                                                                            |
-|verify box              |Header Details|is present                                                      |
-|populate field          |[2]           |with           |CSBG                                            |
-|clear field             |IO                                                                             |
-|wait for progress bar                                                                                   |
-|populate field          |IO            |with           |1234 |partially matching picker field suggestion|
-|clear field             |CC                                                                             |
-|populate field          |CC            |with           |C    |partially matching picker field suggestion|
-|verify field            |IO            |contains       |IO123407                                        |
-|verify field            |Description[1]|contains       |Internal order for audit purpose 1              |
-|verify field            |Description[2]|contains       |Taiwan                                          |
+!|script                                                                                         |
+|click on menu           |ORDER PARTS                                                            |
+|click on checkbox option|[1]                                                                    |
+|verify box              |Header Details|is present                                              |
+|populate field          |[2]           |with    |CSBG                                           |
+|clear field             |IO                                                                     |
+|wait for progress bar                                                                           |
+|populate field          |IO            |with    |1234|partially matching picker field suggestion|
+|clear field             |CC                                                                     |
+|wait for progress bar                                                                           |
+|populate field          |CC            |with    |CC  |partially matching picker field suggestion|
+|verify field            |IO            |contains|IO123407                                       |
+|verify field            |Description[1]|contains|Internal order for audit purpose 1             |
+|verify field            |Description[2]|contains|Taiwan                                         |
 ***!
 
 !*** SELECT FOR RADIO BUTTONS
@@ -112,9 +112,10 @@ Test
 ***!
 
 !*** logout
-!|script|
-|logout |
-**!
+!|script  |
+|logout   |
+|tear down|
+***!
 
 
 

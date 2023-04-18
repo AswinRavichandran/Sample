@@ -26,3 +26,7 @@ Test
 !|script                                    |
 |click button with SAVE DETAILS|SAVE DETAILS|
 
+!|script  |
+|logout   |
+|tear down|
+

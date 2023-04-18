@@ -13,3 +13,7 @@ Test
 !|script                                                                                                                                                                     |
 |click on menu                     |ORDER PARTS                                                                                                                              |
 |Enter Case Details with Deliver To|Chennai|with Short Order Description|Tested|with Building|Shyamala Towers|with Dummy Reservation|[1]|with Product Group|CSBG|with IO|1234|
+
+!|script|
+|logout|
+|tear down|

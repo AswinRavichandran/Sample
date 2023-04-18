@@ -1,12 +1,12 @@
+|FitNesseForAppian.Examples.SuiteTest.VWHPopulate||17:54:05 Wed, Apr 12, 2023|
+|FitNesseForAppian.Examples.SuiteTest.VWHSample||17:53:09 Wed, Apr 12, 2023|
+|FitNesseForAppian.Examples.SuiteTest.VWHfirstrun||17:52:27 Wed, Apr 12, 2023|
+|FitNesseForAppian.Examples.SuiteTest.RejectionFlow||17:49:53 Wed, Apr 12, 2023|
 |FitNesseForAppian.Examples.SuiteTest.ScenarioLibrary||15:08:07 Wed, Apr 12, 2023|
-|FitNesseForAppian.Examples.SuiteTest.VWHPopulate||14:59:31 Wed, Apr 12, 2023|
 |FitNesseForAppian.Examples.Hands-on.Chart||12:57:04 Wed, Apr 12, 2023|
-|FitNesseForAppian.Examples.SuiteTest.VWHSample||10:06:21 Wed, Apr 12, 2023|
 |FitNesseForAppian.Examples.Hands-on.VirtualWarehouseFlow||15:08:46 Tue, Apr 11, 2023|
 |FitNesseForAppian.Examples.VirtualWarehouse.TEST01||15:08:43 Tue, Apr 11, 2023|
 |FitNesseForAppian.Examples.VirtualWarehouse.ScrenarioLibrary||14:48:21 Tue, Apr 11, 2023|
-|FitNesseForAppian.Examples.SuiteTest.RejectionFlow||13:13:04 Tue, Apr 11, 2023|
-|FitNesseForAppian.Examples.SuiteTest.VWHfirstrun||12:41:45 Tue, Apr 11, 2023|
 |FitNesseForAppian.Examples.SuiteTest||12:38:35 Tue, Apr 11, 2023|
 |FitNesseForAppian.Examples.VirtualWarehouse.ScrenarioLibrary.VHW||12:32:43 Tue, Apr 11, 2023|
 |FitNesseForAppian.Examples.VirtualWarehouse.SUbmit||12:31:27 Tue, Apr 11, 2023|
