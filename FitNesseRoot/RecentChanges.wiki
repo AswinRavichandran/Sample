@@ -1,3 +1,4 @@
+|FitNesseForAppian.Examples.Hands-on.Milestone||12:19:46 Tue, Apr 18, 2023|
 |FitNesseForAppian.Examples.SuiteTest.VWHPopulate||17:54:05 Wed, Apr 12, 2023|
 |FitNesseForAppian.Examples.SuiteTest.VWHSample||17:53:09 Wed, Apr 12, 2023|
 |FitNesseForAppian.Examples.SuiteTest.VWHfirstrun||17:52:27 Wed, Apr 12, 2023|
@@ -24,7 +25,6 @@
 |FitNesseForAppian.Examples.Hands-on.REGEX||12:04:53 Thu, Apr 06, 2023|
 |FrontPage||09:54:27 Thu, Apr 06, 2023|
 |FitNesseForAppian.Examples.Hands-on.Records||18:23:38 Wed, Apr 05, 2023|
-|FitNesseForAppian.Examples.Hands-on.Milestone||16:28:28 Wed, Apr 05, 2023|
 |FitNesseForAppian.Examples.Hands-on.Opportunitytracker||13:25:03 Wed, Apr 05, 2023|
 |FitNesseForAppian.Examples.VirtualWareHousecheck||11:06:43 Wed, Apr 05, 2023|
 |FitNesseForAppian.Examples.Hands-on.uploadfile||10:11:14 Wed, Apr 05, 2023|
