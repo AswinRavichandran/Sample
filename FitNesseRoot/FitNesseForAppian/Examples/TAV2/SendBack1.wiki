@@ -1,0 +1,46 @@
+---
+Help: SendBack from Specialist
+Test
+---
+!define TEST_SYSTEM {slim}
+!define COMMAND_PATTERN {java -Dlog4j.debug -Dlog4j.configuration=file:\\\${automated.testing.home}\log4j.properties -cp %p %m}
+!path ${automated.testing.home}/**.jar
+
+!*** Initialization
+!| script              |com.appiancorp.ps.automatedtest.fixture.SitesFixture|
+|sample                |Aswin@1234                                          |
+|set screenshot path to|C:\FitNesse\Screenshot/                             |
+***!
+
+!*** Task and sendback 1
+!|script                                |
+|click on menu            |MY TASK      |
+|click task with Task Name|Specialist[1]|
+|click on button          |GO BACK      |
+|click task with Task Name|Specialist[1]|
+|accept task                            |
+***!
+
+!*** sendback form
+!|script                                                                                                                                                                                                                                                                         |
+|verify fields with RP Trade Name|Trade|with RP Legal Name|Legal            |with RP Type|Type|with RP Email|Email|RP Phone Number|Number|with Product Type|Producttype|with Product Regulations|Regulations|with URL|URL|with Status of Compliance|Status|with Comments|comments|
+|click on link                   |Add                                                                                                                                                                                                                                            |
+|populate grid                   |[1]  |column            |Violation        |row         |[1] |with         |TVPA-20.22                                                                                                                                                          |
+|populate grid                   |[1]  |column            |Description      |row         |[1] |with         |Tested                                                                                                                                                              |
+|populate grid                   |[1]  |column            |Complex Violation|row         |[1] |with         |Yes                                                                                                                                                                 |
+|wait for                        |5    |seconds                                                                                                                                                                                                                                  |
+|click on grid                   |[1]  |column            |[5]              |row         |[1]                                                                                                                                                                                    |
+|click on radio option           |No                                                                                                                                                                                                                                             |
+|click on radio option           |Yes                                                                                                                                                                                                                                            |
+|click on button                 |CANCEL                                                                                                                                                                                                                                         |
+|click on button                 |NO                                                                                                                                                                                                                                             |
+|wait for                        |5    |seconds                                                                                                                                                                                                                                  |
+|click on button                 |CANCEL                                                                                                                                                                                                                                         |
+|click on button                 |NO                                                                                                                                                                                                                                             |
+|click on button                 |REJECT[2]                                                                                                                                                                                                                                      |
+|click on button                 |NO                                                                                                                                                                                                                                             |
+|click on button                 |SEND BACK                                                                                                                                                                                                                                      |
+|click on button                 |YES                                                                                                                                                                                                                                            |
+|wait for                        |5    |seconds                                                                                                                                                                                                                                  |
+|tear down                                                                                                                                                                                                                                                                       |
+***!

@@ -1,0 +1,99 @@
+---
+Help: TAV
+---
+!| scenario           |sample                      |username                     |
+|setup with           |CHROME                      |browser                      |
+|set appian url to    |https://appiancoe.vuram.com/suite/sites/tobacco-and-vaping|
+|set appian version to|22.3                                                      |
+|set appian locale to |en_US                                                     |
+|login with username  |@username                                                 |
+
+!*** Regulated Party Details
+!|scenario     |Enter value with RP Trade Name|Trade          |with RP Legal Name|Legal|with RP Type|Type|with RP Email|Email|RP Phone Number|Number|
+|populate field|RP Trade Name                 |with           |@Trade                                                                               |
+|$mnb=         |get field                     |RP Trade Name  |value                                                                                |
+|populate field|RP Legal Name                 |with           |@Legal                                                                               |
+|$mnb1=        |get field                     |RP Legal Name  |value                                                                                |
+|populate field|RP Type                       |with           |@Type                                                                                |
+|$mnb2=        |get field                     |RP Type        |value                                                                                |
+|populate field|RP Email                      |with           |@Email                                                                               |
+|$mnb3=        |get field                     |RP Email       |value                                                                                |
+|populate field|RP Phone Number               |with           |@Number                                                                              |
+|$mnb4=        |get field                     |RP Phone Number|value                                                                                |
+***!
+
+!*** Button actions
+!|scenario      |click button with CANCEL|CANCEL|with NO|NO|with NEXT|NEXT|
+|click on button|@CANCEL                                                  |
+|click on button|@NO                                                      |
+|click on button|@NEXT                                                    |
+***!
+
+!*** Inspection Review
+!|scenario     |get value with Status of Compliance|compliance          |with Reviewer|Reviewer|with Inspector Notes|Notes|
+|$get1=        |get field                          |Status of Compliance|value                                            |
+|verify field  |Status of Compliance               |contains            |$get1                                            |
+|$get2=        |get field                          |Reviewer            |value                                            |
+|verify field  |reviewer                           |contains            |$get2                                            |
+|show          |get field                          |Status of Compliance|value                                            |
+|show          |get field                          |Reviewer            |value                                            |
+|$qwe=         |get random string                  |50                                                                    |
+|populate field|Inspector Notes                    |with                |$qwe                                             |
+***!
+
+!*** Approval 1
+!|scenario    |click task with Task Name|Name|
+|click on link|@Name                         |
+***!
+
+!*** Approval form 1
+!|scenario     |verify fields with RP Trade Name|Trade   |with RP Legal Name|Legal|with RP Type|Type|with RP Email|Email|RP Phone Number|Number|with Product Type|Producttype|with Product Regulations|Regulations|with URL|URL|with Status of Compliance|Status|with Comments|comments|
+|verify field  |RP Trade Name                   |is not blank                                                                                                                                                                                                                          |
+|verify field  |RP Trade Name                   |contains|$mnb                                                                                                                                                                                                                         |
+|verify field  |RP Legal Name                   |is not blank                                                                                                                                                                                                                          |
+|verify field  |RP Legal Name                   |contains|$mnb1                                                                                                                                                                                                                        |
+|verify field  |RP Type                         |is not blank                                                                                                                                                                                                                          |
+|verify field  |RP Type                         |contains|$mnb2                                                                                                                                                                                                                        |
+|verify field  |RP Email                        |is not blank                                                                                                                                                                                                                          |
+|verify field  |RP Email                        |contains|$mnb3                                                                                                                                                                                                                        |
+|verify field  |RP Phone Number                 |is not blank                                                                                                                                                                                                                          |
+|verify field  |RP Phone Number                 |contains|$mnb4                                                                                                                                                                                                                        |
+|verify field  |Product Type                    |is not blank                                                                                                                                                                                                                          |
+|verify field  |Product Regulations             |is not blank                                                                                                                                                                                                                          |
+|verify field  |URL                             |is not blank                                                                                                                                                                                                                          |
+|verify field  |Status of Compliance            |is not blank                                                                                                                                                                                                                          |
+|$qwe1=        |get random string               |20                                                                                                                                                                                                                                    |
+|populate field|Comments                        |with    |$qwe1                                                                                                                                                                                                                        |
+***!
+
+!*** Approval form 2
+!|scenario   |verify fields with RP Trade Name|Trade   |with RP Legal Name|Legal|with RP Type|Type|with RP Email|Email|RP Phone Number|Number|with Product Type|Producttype|with Product Regulations|Regulations|with URL|URL|with Status of Compliance|Status|
+|verify field|RP Trade Name                   |is not blank                                                                                                                                                                                                   |
+|verify field|RP Trade Name                   |contains|$mnb                                                                                                                                                                                                  |
+|verify field|RP Legal Name                   |is not blank                                                                                                                                                                                                   |
+|verify field|RP Legal Name                   |contains|$mnb1                                                                                                                                                                                                 |
+|verify field|RP Type                         |is not blank                                                                                                                                                                                                   |
+|verify field|RP Type                         |contains|$mnb2                                                                                                                                                                                                 |
+|verify field|RP Email                        |is not blank                                                                                                                                                                                                   |
+|verify field|RP Email                        |contains|$mnb3                                                                                                                                                                                                 |
+|verify field|RP Phone Number                 |is not blank                                                                                                                                                                                                   |
+|verify field|RP Phone Number                 |contains|$mnb4                                                                                                                                                                                                 |
+|verify field|Product Type                    |is not blank                                                                                                                                                                                                   |
+|verify field|Product Regulations             |is not blank                                                                                                                                                                                                   |
+|verify field|URL                             |is not blank                                                                                                                                                                                                   |
+|verify field|Status of Compliance            |is not blank                                                                                                                                                                                                   |
+***!
+
+!*** Approval form 2.1
+!|scenario   |check field with Status of Compliance|Compliance|with Is Inspector Edits|edits|with Is Manager Review|Review|with Manager Group|Group|
+|verify field|Status of Compliance                 |contains  |@Compliance                                                                         |
+|verify field|Is Inspector Edits                   |contains  |@edits                                                                              |
+|verify field|Is Manager Review                    |contains  |@Review                                                                             |
+|verify field|Manager Group                        |contains  |@Group                                                                              |
+***!
+
+!*** Approval form 2.2
+!|scenario  |check value with Comments|comments                         |
+|verify grid|Previous Comments        |column|[1]|row|[1]|contains|$qwe |
+|verify grid|Previous Comments        |column|[1]|row|[2]|contains|$qwe1|
+***!

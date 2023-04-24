@@ -1,0 +1,92 @@
+---
+Help: Flow
+Test
+---
+!define TEST_SYSTEM {slim}
+!define COMMAND_PATTERN {java -Dlog4j.debug -Dlog4j.configuration=file:\\\${automated.testing.home}\log4j.properties -cp %p %m}
+!path ${automated.testing.home}/**.jar
+             
+!*** Initialization
+!| script              |com.appiancorp.ps.automatedtest.fixture.SitesFixture|
+|sample                |aswinr                                              |
+|set screenshot path to|C:\FitNesse\Screenshot/                             |
+|click on menu         |REPORT                                              |
+|take screenshot       |Bar Chart                                           |
+***!
+
+!*** Bar chart distributor
+!|script                                                                                                                         |
+|wait for progress bar                                                                                                           |
+|click on bar chart              |Rp Type and Status of Compliance|bar   |[1]                                                    |
+|get grid                        |[1]                             |total count                                                   |
+|show                            |get grid                        |[1]   |total count                                            |
+|get grid                        |[1]                             |row count                                                     |
+|show                            |get grid                        |[1]   |row count                                              |
+|click on button with tooltip    |Refresh                                                                                        |
+|get grid                        |[1]                             |column|Inspector Name      |row                 |[1]|value    |
+|show                            |get grid                        |[1]   |column              |Inspector Name      |row|[1]|value|
+|get grid                        |[1]                             |column|Status of Compliance|row                 |[1]|value    |
+|show                            |get grid                        |[1]   |column              |Status of Compliance|row|[1]|value|
+|get grid                        |[1]                             |column|Inspector Name      |row                 |[2]|value    |
+|show                            |get grid                        |[1]   |column              |Inspector Name      |row|[2]|value|
+|get grid                        |[1]                             |column|Status of Compliance|row                 |[1]|value    |
+|show                            |get grid                        |[1]   |column              |Status of Compliance|row|[2]|value|
+|populate field with placeholder |Search _Inspection Detailses    |with  |23                                                     |
+|wait for progress bar                                                                                                           |
+|click on button                 |SEARCH                                                                                         |
+|wait for progress bar                                                                                                           |
+|clear search value                                                                                                              |
+|populate record type user filter|RP TYPE                         |with  |Manufacturer                                           |
+|wait for                        |3                               |seconds                                                       |
+|clear record type user filter   |RP TYPE                                                                                        |
+***!
+
+!*** Bar chart Importer
+!|script                                                                                                                        |
+|wait for progress bar                                                                                                          |
+|click on bar chart             |Rp Type and Status of Compliance|bar   |[2]                                                    |
+|get grid                       |[1]                             |total count                                                   |
+|show                           |get grid                        |[1]   |total count                                            |
+|wait for                       |3                               |seconds                                                       |
+|click on record grid navigation|Next                                                                                           |
+|get grid                       |[1]                             |row count                                                     |
+|show                           |get grid                        |[1]   |row count                                              |
+|click on button with tooltip   |Refresh                                                                                        |
+|get grid                       |[1]                             |column|Inspector Name      |row                 |[1]|value    |
+|show                           |get grid                        |[1]   |column              |Inspector Name      |row|[1]|value|
+|get grid                       |[1]                             |column|Status of Compliance|row                 |[1]|value    |
+|show                           |get grid                        |[1]   |column              |Status of Compliance|row|[1]|value|
+|get grid                       |[1]                             |column|Inspector Name      |row                 |[2]|value    |
+|show                           |get grid                        |[1]   |column              |Inspector Name      |row|[2]|value|
+|get grid                       |[1]                             |column|Status of Compliance|row                 |[1]|value    |
+|show                           |get grid                        |[1]   |column              |Status of Compliance|row|[2]|value|
+|get grid                       |[1]                             |total count                                                   |
+|show                           |get grid                        |[1]   |total count                                            |
+|get grid                       |[1]                             |row count                                                     |
+|show                           |get grid                        |[1]   |row count                                              |
+***!
+
+!*** Bar chart Manufacturer
+!|script                                                                                                                                                       |
+|chart with Manufacturer|Manufacturer|with Request Refrence ID|Request|with Inspector Name|Inspector|with Product Type|Product|with Status of Compliance|Status|
+
+***!
+
+!*** Bar chart Retailer|
+!|script                                                                                                                                                     |
+|Bar with Manufacturer|Manufacturer|with Request Refrence ID|Request|with Inspector Name|Inspector|with Product Type|Product|with Status of Compliance|Status|
+***!
+
+!*** logout
+!|script  |
+|tear down|
+***!
+
+
+
+
+
+
+
+
+

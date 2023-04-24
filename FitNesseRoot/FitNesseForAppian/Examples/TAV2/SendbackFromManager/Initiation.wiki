@@ -1,0 +1,70 @@
+---
+Help: Send Back flow
+Test
+---
+!define TEST_SYSTEM {slim}
+!define COMMAND_PATTERN {java -Dlog4j.debug -Dlog4j.configuration=file:\\\${automated.testing.home}\log4j.properties -cp %p %m}
+!path ${automated.testing.home}/**.jar
+             
+!*** Initialization
+!| script              |com.appiancorp.ps.automatedtest.fixture.SitesFixture|
+|sample                |Aswin@123                                           |
+|set screenshot path to|C:\FitNesse\Screenshot/                             |
+
+***!
+
+!*** Regulatory Party Details
+!|script                                                                                                                                                 |
+|$var=                         |get milestone|[1]               |step                                                                                    |
+|show                          |get milestone|[1]               |step                                                                                    |
+|verify milestone              |[1]          |step is           |$var                                                                                    |
+|Enter value with RP Trade Name|Vuram        |with RP Legal Name|Test|with RP Type|Importer|with RP Email|aswinr@vuram.com|RP Phone Number|+91 7654321089|
+|click button with CANCEL      |CANCEL       |with NO           |NO  |with NEXT   |NEXT                                                                  |
+***!
+
+!*** Inspection Details
+!|script                                                                                                                                                                                                                     |
+|set test variable|info               |with   |{"Type":"Tobacco Products","Regulations":"TVPA-20.22","URL":"https://appiancoe.vuram.com/suite/sites/tobacco-and-vaping","Button":"Previous","Milestone":"Inspection Details"}|
+|verify milestone |[1]                |step is|tv!info.Milestone                                                                                                                                                             |
+|get milestone    |[1]                |step                                                                                                                                                                                  |
+|show             |get milestone      |[1]    |step                                                                                                                                                                          |
+|populate field   |Product Type       |with   |tv!info.Type                                                                                                                                                                  |
+|populate field   |Product Regulations|with   |tv!info.Regulations                                                                                                                                                           |
+|populate field   |URL                |with   |tv!info.URL                                                                                                                                                                   |
+|click on button  |tv!info.Button                                                                                                                                                                                            |
+|wait for         |5                  |seconds                                                                                                                                                                               |
+|click on button  |NEXT                                                                                                                                                                                                      |
+|wait for         |3                  |seconds                                                                                                                                                                               |
+|click on button  |NEXT                                                                                                                                                                                                      |
+***!
+
+!*** Violation Details
+!|script                                                                                                 |
+|populate        |FILE_UPLOAD  |field  |[1]|with|C:\Users\u416984\Pictures\Screenshots\Screenshot (1).png|
+|$var=           |get milestone|[1]    |step                                                             |
+|show            |get milestone|[1]    |step                                                             |
+|verify milestone|[1]          |step is|$var                                                             |
+|click on button |NEXT                                                                                   |
+***!
+
+!*** Inspection Review|
+!|script                                                                                         |
+|$var=                              |get milestone|[1]          |step                            |
+|show                               |get milestone|[1]          |step                            |
+|verify milestone                   |[1]          |step is      |$var                            |
+|get value with Status of Compliance|$get1        |with Reviewer|$get2|with Inspector Notes|Notes|
+|wait for                           |10           |seconds                                       |
+|click on button                    |SUBMIT                                                      |
+|click on button                    |YES                                                         |
+|wait for progress bar                                                                           |
+|take screenshot                    |Screenshot-4                                                |
+|wait for                           |3            |seconds                                       |
+|click on Button                    |OK                                                          |
+***!
+
+!*** Logout
+!|script  |
+|tear down|
+***!
+
+

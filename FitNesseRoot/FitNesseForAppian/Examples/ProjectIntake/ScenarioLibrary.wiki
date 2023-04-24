@@ -1,0 +1,38 @@
+!| scenario           |sample                    |username                   |
+|setup with           |CHROME                    |browser                    |
+|set appian url to    |https://appiancoe.vuram.com/suite/sites/project-intake|
+|set appian version to|22.3                                                  |
+|set appian locale to |en_US                                                 |
+|login with username  |@username                                             |
+
+!|scenario     |Enter values with Financial Institution Name|FinancialInstitutionName  |with Country|country|with State|state|with City|City|
+|populate field|Financial Institution Name                  |with                      |@FinancialInstitutionName                           |
+|populate field|Country                                     |with                      |@country                                            |
+|populate field|State                                       |with                      |@state                                              |
+|get field     |Currency                                    |value                                                                          |
+|show          |get field                                   |Currency                  |value                                               |
+|populate field|City                                        |with                      |@City                                               |
+|$name=        |get field                                   |Financial Institution Name|value                                               |
+
+!|scenario     |Values with eCRMOpportunityID|ID       |with Benefit/ Contract Value|Value|with Planned Efforts|Efforts|with Clarity Project ID|ID1|with Clarity Project Name|Name|with Applix ID/Client ID|Client|with DUNS Number|Number|with SAP ID|SAP|
+|$max=         |get random string            |17                                                                                                                                                                                                          |
+|populate field|eCRMOpportunityID            |with     |$max                                                                                                                                                                                              |
+|$max1=        |get random integer from      |5        |to                          |15                                                                                                                                                                   |
+|populate field|Benefit/ Contract Value      |with     |$max1                                                                                                                                                                                             |
+|populate field|Planned Efforts              |with     |@Efforts                                                                                                                                                                                          |
+|$name2=       |get random string            |10                                                                                                                                                                                                          |
+|populate field|Clarity Project ID           |with     |$name2                                                                                                                                                                                            |
+|populate field|Clarity Project Name         |with     |$name                                                                                                                                                                                             |
+|$var2=        |get random alphabet string   |8                                                                                                                                                                                                           |
+|populate field|Applix ID/Client ID          |with     |$var2                                                                                                                                                                                             |
+|$var3=        |get random integer from      |123456789|to                          |987654321                                                                                                                                                            |
+|populate field|DUNS Number                  |with     |$var3                                                                                                                                                                                             |
+|populate field|SAP ID                       |with     |$var3                                                                                                                                                                                             |
+
+
+!|scenario     |picker with Prologue Project Manager|Manager|with Sales Executive|Sales                                     |
+|populate field|Prologue Project Manager            |with   |@Manager            |partially matching picker field suggestion|
+|populate field|Sales Executive                     |with   |@Sales              |partially matching picker field suggestion|
+
+
+

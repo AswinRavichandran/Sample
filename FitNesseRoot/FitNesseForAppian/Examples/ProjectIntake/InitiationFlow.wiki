@@ -1,0 +1,65 @@
+---
+Help: Acceptance
+Test
+---
+!define TEST_SYSTEM {slim}
+!define COMMAND_PATTERN {java -Dlog4j.debug -Dlog4j.configuration=file:\\\${automated.testing.home}\log4j.properties -cp %p %m}
+!path ${automated.testing.home}/**.jar
+             
+!*** Initialization
+!| script|com.appiancorp.ps.automatedtest.fixture.SitesFixture|
+|sample  |Aswin@123                                           |
+***!
+
+!*** Navigation and Institution details
+!|script                                                                                                                    |
+|click on card                               |Click to initiate                                                             |
+|Enter values with Financial Institution Name|Project group|with Country|Mexico|with State|Baja California|with City|Chennai|
+***!
+
+!*** Project details
+!|script                                                                                                                                                                                                                            |
+|Values with eCRMOpportunityID|$max|with Benefit/ Contract Value|$max1|with Planned Efforts|358|with Clarity Project ID|$name2|with Clarity Project Name|$name|with Applix ID/Client ID|$var2|with DUNS Number|var3|with SAP ID|var3|
+***!
+
+!*** Internal contacts
+!|script                                                                    |
+|picker with Prologue Project Manager|raswin|with Sales Executive|Aswin@1234|
+
+!|script                                     |
+|wait for                      |5  |seconds  |
+|click on record related action|Project Scope|
+
+
+!|script                                                                                                        |
+|$qwe=         |get field                                                       |Project Type|value             |
+|show          |$qwe=                                                           |get field   |Project Type|value|
+|verify field  |Project Type                                                    |contains    |$qwe              |
+|populate field|Project Subtype                                                 |with        |Upgrade           |
+|populate field|In House/ SaaS                                                  |with        |SaaS              |
+|populate field|Identify the modules in scope for this Implementation/ Migration|with        |GL Only           |
+
+!|script                                                                                                                      |
+|populate field|Document Type  |with  |$qwe                                                                                   |
+|click on link |Click to add documents                                                                                        |
+|populate grid |Project Uploads|column|[12]  |row|[1]|with|C:\Users\u416984\Pictures\Camera Roll\WIN_20230217_11_02_44_Pro.jpg|
+|click on grid |Project Uploads|column|Remove|row|[1]                                                                         |
+|populate field|Document Type  |with  |$qwe                                                                                   |
+|click on link |Click to add documents                                                                                        |
+|populate grid |Project Uploads|column|[12]  |row|[1]|with|C:\Users\u416984\Pictures\Camera Roll\WIN_20230217_11_02_44_Pro.jpg|
+
+!|script                   |
+|click on button|SAVE DRAFT|
+|wait fr progress bar      |
+|click on link  |$name[1]  |
+|click on button|CANCEL    |
+|click on button|NO        |
+
+
+!|script                                                                          |
+|click on link  |REASSIGN                                                         |
+|populate field |Reassign To|with|Aswin|partially matching picker field suggestion|
+|click on button|CANCEL                                                           |
+|click on button|SUBMIT                                                           |
+
+

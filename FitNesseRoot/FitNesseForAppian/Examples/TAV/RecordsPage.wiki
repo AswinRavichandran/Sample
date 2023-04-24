@@ -1,0 +1,51 @@
+---
+Help: Flow
+Test
+---
+!define TEST_SYSTEM {slim}
+!define COMMAND_PATTERN {java -Dlog4j.debug -Dlog4j.configuration=file:\\\${automated.testing.home}\log4j.properties -cp %p %m}
+!path ${automated.testing.home}/**.jar
+             
+!*** Initialization
+!| script              |com.appiancorp.ps.automatedtest.fixture.SitesFixture|
+|sample                |aswinr                                              |
+|set screenshot path to|C:\FitNesse\Screenshot/                             |
+***!
+
+
+!*** Sorting
+!|script                                                                                                                                                                                                                                                       |
+|click on record grid navigation|Next                                                                                                                                                                                                                          |
+|click on button with tooltip   |Refresh                                                                                                                                                                                                                       |
+|click on button with tooltip   |Manage filters                                                                                                                                                                                                                |
+|click on button with tooltip   |Export to Excel - Exports the currently filtered list of records as an Excel file.                                                                                                                                            |
+|wait for                       |5                           |seconds                                                                                                                                                                                          |
+|populate field with placeholder|Search _Inspection Detailses|with             |23                                                                                                                                                                             |
+|wait for progress bar                                                                                                                                                                                                                                         |
+|click on button                |SEARCH                                                                                                                                                                                                                        |
+|sort record grid by column     |Request Refrence Id                                                                                                                                                                                                           |
+|sort grid with Inspector Name  |Name                        |with Product Type|Type|with RP Type|RP|with Status of Compliance|Status|with Request Status|Request|with PRODUCT TYPE|Vaping Products|with REQUEST STATUS|Request Initiated|with RP TYPE|Importer|
+|clear record type user filter  |PRODUCT TYPE                                                                                                                                                                                                                  |
+|clear record type user filter  |REQUEST STATUS                                                                                                                                                                                                                |
+|clear record type user filter  |RP TYPE                                                                                                                                                                                                                       |
+|wait for                       |5                           |seconds                                                                                                                                                                                          |
+***!
+
+!*** Record action
+!|script                                                                                                                                                                                                                                                                                 |
+|click on record                  |[1]                                                                                                                                                                                                                                                   |
+|verify field with Violation Image|Image   |with RP Trade Name|Name|with RP Legal Name|Legal|with RP Type|Type|with RP Email|Email|with RP Phone Number|with Product Type|Product|with Product Regulation|Regulation|with URL|URL|with Violation|Violation|with Complex Violation|Complex|
+|get grid                         |[1]     |total count                                                                                                                                                                                                                                  |
+|show                             |get grid|[1]               |total count                                                                                                                                                                                                               |
+|get grid                         |[1]     |row count                                                                                                                                                                                                                                    |
+|show                             |get grid|[1]               |row count                                                                                                                                                                                                                 |
+|click on record related action   |Related Actions                                                                                                                                                                                                                                       |
+|wait for                         |5       |seconds                                                                                                                                                                                                                                      |
+|click on record related action   |Review Details                                                                                                                                                                                                                                        |
+***!
+
+!*** logout
+!|script  |
+|tear down|
+***!
+
