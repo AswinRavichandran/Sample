@@ -18,6 +18,7 @@ Test
 |click on link    |SEND BACK[1]                                                                                                   |
 |accept task                                                                                                                      |
 |populate field   |RP Type             |with                |Retailer                                                             |
+|check not        |get field           |RP Type             |value                             |$mnb2                             |
 |click on button  |NEXT                                                                                                           |
 |set test variable|task                |with                |{"button":"NEXT","Type":"Vaping Products","Regulations":"TVPA-30.21"}|
 |populate field   |Product Type        |with                |tv!task.Type                                                         |

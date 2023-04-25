@@ -7,13 +7,15 @@ Test
 !path ${automated.testing.home}/**.jar
              
 !*** Initialization
-!| script             |com.appiancorp.ps.automatedtest.fixture.SitesFixture                                    |
-|setup with           |CHROME              |Browser                               |
+!| script             |com.appiancorp.ps.automatedtest.fixture.SitesFixture       |
+|setup with           |CHROME          |Browser                                   |
 |set appian url to    |https://appiancoe.vuram.com/suite/sites/as_virtualwarehouse|
 |set appian version to|22.3                                                       |
 |set appian locale to |en_US                                                      |
 |login with username  |Aswin@1234                                                 |
 |click on menu        |TASK                                                       |
-|click on link        |026[1]                                                     |
-|$VAR=                |get field           |IO                   |value           |
-|populate field       |Comments            |with value           |$VAR            |
+|click on link        |081[1]                                                     |
+|accept task                                                                      |
+|$VAR=                |get field       |IO               |value                   |
+|populate field       |Comments        |with value       |$VAR                    |
+|check                |get field       |Comments         |value       |$VAR       |

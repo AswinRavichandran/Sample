@@ -5,6 +5,6 @@ Suite
 
 !note This page is automatically generated when running tests. It will be overwritten by the next Suite or Test execution.
 
-Tests failed (first failure was at 2023-04-12T09:55:24.489):
+Tests failed (first failure was at 2023-04-25T13:08:23.741):
 
 !see [[FitNesseForAppian.Examples.VirtualWarehouse.TEST01][.FitNesseForAppian.Examples.VirtualWarehouse.TEST01]]

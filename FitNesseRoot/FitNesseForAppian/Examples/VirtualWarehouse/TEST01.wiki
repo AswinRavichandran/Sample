@@ -11,6 +11,7 @@ Default|Aswin@1234|!define TEST_SYSTEM {slim}
 |Default |Aswin@1234                                          |
 
 !*** Navigation and Header details
-!|script                                                                                                     |
-|click on menu                     |ORDER PARTS                                                              |
-|Enter Case Details with Deliver To|Chennai|with Short Order Description|Tested|with Building|Shyamala Towers|
+!|script                                                                                                       |
+|click on menu                     |ORDER PARTS                                                                |
+|Enter Case Details with Deliver To|Chennai  |with Short Order Description|Tested|with Building|Shyamala Towers|
+|check                             |get field|Deliver To                  |value |Chennai                      |
