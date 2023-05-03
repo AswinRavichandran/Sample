@@ -22,7 +22,7 @@ Test
 |click on link             |PA_0090[1]                                                 |
 |ensure                    |verify field           |IO           |is present           |
 |$VAR=                     |get field              |IO           |value                |
-|show                      |IO                                                         |
+|show                      |get field              |IO           |value                |
 |#                         |verify field           |IO           |is present           |
 |*                         |verify field           |IO           |is present           |
 

@@ -19,6 +19,7 @@ Test
 |show                          |get milestone|[1]               |step                                                                                    |
 |verify milestone              |[1]          |step is           |$var                                                                                    |
 |Enter value with RP Trade Name|Vuram        |with RP Legal Name|Test|with RP Type|Importer|with RP Email|aswinr@vuram.com|RP Phone Number|+91 7654321089|
+|wait for progress bar                                                                                                                                   |
 |click button with CANCEL      |CANCEL       |with NO           |NO  |with NEXT   |NEXT                                                                  |
 ***!
 

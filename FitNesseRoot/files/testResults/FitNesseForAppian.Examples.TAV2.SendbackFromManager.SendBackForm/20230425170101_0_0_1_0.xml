@@ -1,0 +1,1308 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20221219</FitNesseVersion>
+  <rootPath>FitNesseForAppian.Examples.TAV2.SendbackFromManager.SendBackForm</rootPath>
+  <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2023-04-25T17:01:01+05:30</date>
+    <runTimeInMillis>53633</runTimeInMillis>
+    <content>&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Scenario Libraries&lt;/p&gt;
+	&lt;div&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="ScenarioLibrary"&gt;.ScenarioLibrary&lt;/a&gt; &lt;a href="ScenarioLibrary?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;h2 id="0"&gt;These scenarios will be accessible to all test cases in the the FitNesseRoot folder. If you are using a different FitNesseRoot Folder, make sure to copy these files if using any setup scenarios.&lt;/h2&gt;
+&lt;br/&gt;&lt;h3 id="1"&gt;Update these variables for your specific test environment&lt;/h3&gt;
+&lt;br/&gt;&lt;div class="collapsible"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Variables for Scenarios&lt;/p&gt;
+	&lt;div&gt;Default browser can be &lt;b&gt;FIREFOX&lt;/b&gt; or &lt;b&gt;CHROME&lt;/b&gt;&lt;br/&gt;&lt;span class="meta"&gt;variable defined: defaultBrowser=FIREFOX&lt;/span&gt;
+&lt;br/&gt;&lt;br/&gt;Default Version can be any supported Appian Version in &lt;b&gt;xx.x&lt;/b&gt; format from (21.2 - 23.1)&lt;br/&gt;&lt;span class="meta"&gt;variable defined: defaultVersion=23.1&lt;/span&gt;
+&lt;br/&gt;&lt;br/&gt;Default Locale can be &lt;b&gt;en_US&lt;/b&gt; or &lt;b&gt;en_GB&lt;/b&gt;&lt;br/&gt;&lt;span class="meta"&gt;variable defined: defaultLocale=en_US&lt;/span&gt;
+&lt;br/&gt;&lt;br/&gt;Default URL should include http or https and /suite (e.g. &lt;b&gt;https://forum.appian.com/suite&lt;/b&gt; )&lt;br/&gt;&lt;span class="meta"&gt;variable defined: defaultUrl=REPLACE_APPIAN_URL&lt;/span&gt;
+&lt;br/&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;h3 id="2"&gt;To use out of the box functionality, do not update the scenarios below&lt;/h3&gt;
+&lt;br/&gt;&lt;div class="collapsible"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Setup customizable for browser, locale, version, and URL&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;setup for test script for browser&lt;/td&gt;
+		&lt;td&gt;browserType&lt;/td&gt;
+		&lt;td&gt;locale&lt;/td&gt;
+		&lt;td&gt;location&lt;/td&gt;
+		&lt;td&gt;version&lt;/td&gt;
+		&lt;td&gt;versionNum&lt;/td&gt;
+		&lt;td&gt;url&lt;/td&gt;
+		&lt;td&gt;appianUrl&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;setup with browser&lt;/td&gt;
+		&lt;td colspan="8"&gt;@browserType&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;set appian locale to&lt;/td&gt;
+		&lt;td colspan="8"&gt;@location&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;set appian version to&lt;/td&gt;
+		&lt;td colspan="8"&gt;@versionNum&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor7"&gt;
+		&lt;td&gt;set appian url to&lt;/td&gt;
+		&lt;td colspan="8"&gt;@appianUrl&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;set timeout seconds to&lt;/td&gt;
+		&lt;td colspan="8"&gt;20&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td colspan="9"&gt;set start datetime&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Scenario - Setup using default values&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td colspan="7"&gt;setup for test script&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor6"&gt;
+		&lt;td&gt;setup for test script for browser&lt;/td&gt;
+		&lt;td&gt;FIREFOX&lt;/td&gt;
+		&lt;td&gt;locale&lt;/td&gt;
+		&lt;td&gt;en_US&lt;/td&gt;
+		&lt;td&gt;version&lt;/td&gt;
+		&lt;td&gt;23.1&lt;/td&gt;
+		&lt;td&gt;url&lt;/td&gt;
+		&lt;td&gt;REPLACE_APPIAN_URL&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="FitNesseForAppian.Examples.TAV2.ScenarioLibrary"&gt;.FitNesseForAppian.Examples.TAV2.ScenarioLibrary&lt;/a&gt; &lt;a href="FitNesseForAppian.Examples.TAV2.ScenarioLibrary?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;sample&lt;/td&gt;
+		&lt;td&gt;username&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor7"&gt;
+		&lt;td&gt;setup with&lt;/td&gt;
+		&lt;td&gt;CHROME&lt;/td&gt;
+		&lt;td&gt;browser&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor7"&gt;
+		&lt;td&gt;set appian url to&lt;/td&gt;
+		&lt;td colspan="2"&gt;https://appiancoe.vuram.com/suite/sites/tobacco-and-vaping&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;set appian version to&lt;/td&gt;
+		&lt;td colspan="2"&gt;22.3&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;set appian locale to&lt;/td&gt;
+		&lt;td colspan="2"&gt;en_US&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;login with username&lt;/td&gt;
+		&lt;td colspan="2"&gt;@username&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;div class="collapsible"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Regulated Party Details&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;Enter value with RP Trade Name&lt;/td&gt;
+		&lt;td&gt;Trade&lt;/td&gt;
+		&lt;td&gt;with RP Legal Name&lt;/td&gt;
+		&lt;td&gt;Legal&lt;/td&gt;
+		&lt;td&gt;with RP Type&lt;/td&gt;
+		&lt;td&gt;Type&lt;/td&gt;
+		&lt;td&gt;with RP Email&lt;/td&gt;
+		&lt;td&gt;Email&lt;/td&gt;
+		&lt;td&gt;RP Phone Number&lt;/td&gt;
+		&lt;td&gt;Number&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;RP Trade Name&lt;/td&gt;
+		&lt;td&gt;with&lt;/td&gt;
+		&lt;td colspan="8"&gt;@Trade&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;$mnb=&lt;/td&gt;
+		&lt;td&gt;get field&lt;/td&gt;
+		&lt;td&gt;RP Trade Name&lt;/td&gt;
+		&lt;td colspan="8"&gt;value&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;RP Legal Name&lt;/td&gt;
+		&lt;td&gt;with&lt;/td&gt;
+		&lt;td colspan="8"&gt;@Legal&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor3"&gt;
+		&lt;td&gt;$mnb1=&lt;/td&gt;
+		&lt;td&gt;get field&lt;/td&gt;
+		&lt;td&gt;RP Legal Name&lt;/td&gt;
+		&lt;td colspan="8"&gt;value&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;RP Type&lt;/td&gt;
+		&lt;td&gt;with&lt;/td&gt;
+		&lt;td colspan="8"&gt;@Type&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;$mnb2=&lt;/td&gt;
+		&lt;td&gt;get field&lt;/td&gt;
+		&lt;td&gt;RP Type&lt;/td&gt;
+		&lt;td colspan="8"&gt;value&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;RP Email&lt;/td&gt;
+		&lt;td&gt;with&lt;/td&gt;
+		&lt;td colspan="8"&gt;@Email&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;$mnb3=&lt;/td&gt;
+		&lt;td&gt;get field&lt;/td&gt;
+		&lt;td&gt;RP Email&lt;/td&gt;
+		&lt;td colspan="8"&gt;value&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;RP Phone Number&lt;/td&gt;
+		&lt;td&gt;with&lt;/td&gt;
+		&lt;td colspan="8"&gt;@Number&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor6"&gt;
+		&lt;td&gt;$mnb4=&lt;/td&gt;
+		&lt;td&gt;get field&lt;/td&gt;
+		&lt;td&gt;RP Phone Number&lt;/td&gt;
+		&lt;td colspan="8"&gt;value&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Button actions&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;click button with CANCEL&lt;/td&gt;
+		&lt;td&gt;CANCEL&lt;/td&gt;
+		&lt;td&gt;with NO&lt;/td&gt;
+		&lt;td&gt;NO&lt;/td&gt;
+		&lt;td&gt;with NEXT&lt;/td&gt;
+		&lt;td&gt;NEXT&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="6"&gt;@CANCEL&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="6"&gt;@NO&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="6"&gt;@NEXT&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Inspection Review&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;get value with Status of Compliance&lt;/td&gt;
+		&lt;td&gt;compliance&lt;/td&gt;
+		&lt;td&gt;with Reviewer&lt;/td&gt;
+		&lt;td&gt;Reviewer&lt;/td&gt;
+		&lt;td&gt;with Inspector Notes&lt;/td&gt;
+		&lt;td&gt;Notes&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor6"&gt;
+		&lt;td&gt;$get1=&lt;/td&gt;
+		&lt;td&gt;get field&lt;/td&gt;
+		&lt;td&gt;Status of Compliance&lt;/td&gt;
+		&lt;td colspan="4"&gt;value&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Status of Compliance&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td colspan="4"&gt;$get1&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor7"&gt;
+		&lt;td&gt;$get2=&lt;/td&gt;
+		&lt;td&gt;get field&lt;/td&gt;
+		&lt;td&gt;Reviewer&lt;/td&gt;
+		&lt;td colspan="4"&gt;value&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;reviewer&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td colspan="4"&gt;$get2&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td&gt;get field&lt;/td&gt;
+		&lt;td&gt;Status of Compliance&lt;/td&gt;
+		&lt;td colspan="4"&gt;value&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td&gt;get field&lt;/td&gt;
+		&lt;td&gt;Reviewer&lt;/td&gt;
+		&lt;td colspan="4"&gt;value&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;$qwe=&lt;/td&gt;
+		&lt;td&gt;get random string&lt;/td&gt;
+		&lt;td colspan="5"&gt;50&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Inspector Notes&lt;/td&gt;
+		&lt;td&gt;with&lt;/td&gt;
+		&lt;td colspan="4"&gt;$qwe&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Approval 1&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;click task with Task Name&lt;/td&gt;
+		&lt;td&gt;Name&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor3"&gt;
+		&lt;td&gt;click on link&lt;/td&gt;
+		&lt;td colspan="2"&gt;@Name&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Approval form 1&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;verify fields with RP Trade Name&lt;/td&gt;
+		&lt;td&gt;Trade&lt;/td&gt;
+		&lt;td&gt;with RP Legal Name&lt;/td&gt;
+		&lt;td&gt;Legal&lt;/td&gt;
+		&lt;td&gt;with RP Type&lt;/td&gt;
+		&lt;td&gt;Type&lt;/td&gt;
+		&lt;td&gt;with RP Email&lt;/td&gt;
+		&lt;td&gt;Email&lt;/td&gt;
+		&lt;td&gt;RP Phone Number&lt;/td&gt;
+		&lt;td&gt;Number&lt;/td&gt;
+		&lt;td&gt;with Product Type&lt;/td&gt;
+		&lt;td&gt;Producttype&lt;/td&gt;
+		&lt;td&gt;with Product Regulations&lt;/td&gt;
+		&lt;td&gt;Regulations&lt;/td&gt;
+		&lt;td&gt;with URL&lt;/td&gt;
+		&lt;td&gt;URL&lt;/td&gt;
+		&lt;td&gt;with Status of Compliance&lt;/td&gt;
+		&lt;td&gt;Status&lt;/td&gt;
+		&lt;td&gt;with Comments&lt;/td&gt;
+		&lt;td&gt;comments&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;RP Trade Name&lt;/td&gt;
+		&lt;td colspan="19"&gt;is not blank&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;RP Trade Name&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td colspan="18"&gt;$mnb&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;RP Legal Name&lt;/td&gt;
+		&lt;td colspan="19"&gt;is not blank&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;RP Legal Name&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td colspan="18"&gt;$mnb1&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;RP Type&lt;/td&gt;
+		&lt;td colspan="19"&gt;is not blank&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;RP Type&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td colspan="18"&gt;$mnb2&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;RP Email&lt;/td&gt;
+		&lt;td colspan="19"&gt;is not blank&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;RP Email&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td colspan="18"&gt;$mnb3&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;RP Phone Number&lt;/td&gt;
+		&lt;td colspan="19"&gt;is not blank&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;RP Phone Number&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td colspan="18"&gt;$mnb4&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Product Type&lt;/td&gt;
+		&lt;td colspan="19"&gt;is not blank&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Product Regulations&lt;/td&gt;
+		&lt;td colspan="19"&gt;is not blank&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;URL&lt;/td&gt;
+		&lt;td colspan="19"&gt;is not blank&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Status of Compliance&lt;/td&gt;
+		&lt;td colspan="19"&gt;is not blank&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;$qwe1=&lt;/td&gt;
+		&lt;td&gt;get random string&lt;/td&gt;
+		&lt;td colspan="19"&gt;20&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Comments&lt;/td&gt;
+		&lt;td&gt;with&lt;/td&gt;
+		&lt;td colspan="18"&gt;$qwe1&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="FitNesseForAppian.Examples.TAV2.SendbackFromManager.ScenarioLibrary"&gt;.FitNesseForAppian.Examples.TAV2.SendbackFromManager.ScenarioLibrary&lt;/a&gt; &lt;a href="FitNesseForAppian.Examples.TAV2.SendbackFromManager.ScenarioLibrary?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;sample&lt;/td&gt;
+		&lt;td&gt;username&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor7"&gt;
+		&lt;td&gt;setup with&lt;/td&gt;
+		&lt;td&gt;CHROME&lt;/td&gt;
+		&lt;td&gt;browser&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor7"&gt;
+		&lt;td&gt;set appian url to&lt;/td&gt;
+		&lt;td colspan="2"&gt;https://appiancoe.vuram.com/suite/sites/tobacco-and-vaping&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;set appian version to&lt;/td&gt;
+		&lt;td colspan="2"&gt;22.3&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;set appian locale to&lt;/td&gt;
+		&lt;td colspan="2"&gt;en_US&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;login with username&lt;/td&gt;
+		&lt;td colspan="2"&gt;@username&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;div class="collapsible"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Regulated Party Details&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;Enter value with RP Trade Name&lt;/td&gt;
+		&lt;td&gt;Trade&lt;/td&gt;
+		&lt;td&gt;with RP Legal Name&lt;/td&gt;
+		&lt;td&gt;Legal&lt;/td&gt;
+		&lt;td&gt;with RP Type&lt;/td&gt;
+		&lt;td&gt;Type&lt;/td&gt;
+		&lt;td&gt;with RP Email&lt;/td&gt;
+		&lt;td&gt;Email&lt;/td&gt;
+		&lt;td&gt;RP Phone Number&lt;/td&gt;
+		&lt;td&gt;Number&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;RP Trade Name&lt;/td&gt;
+		&lt;td&gt;with&lt;/td&gt;
+		&lt;td colspan="8"&gt;@Trade&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;$mnb=&lt;/td&gt;
+		&lt;td&gt;get field&lt;/td&gt;
+		&lt;td&gt;RP Trade Name&lt;/td&gt;
+		&lt;td colspan="8"&gt;value&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;RP Legal Name&lt;/td&gt;
+		&lt;td&gt;with&lt;/td&gt;
+		&lt;td colspan="8"&gt;@Legal&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor3"&gt;
+		&lt;td&gt;$mnb1=&lt;/td&gt;
+		&lt;td&gt;get field&lt;/td&gt;
+		&lt;td&gt;RP Legal Name&lt;/td&gt;
+		&lt;td colspan="8"&gt;value&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;RP Type&lt;/td&gt;
+		&lt;td&gt;with&lt;/td&gt;
+		&lt;td colspan="8"&gt;@Type&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;$mnb2=&lt;/td&gt;
+		&lt;td&gt;get field&lt;/td&gt;
+		&lt;td&gt;RP Type&lt;/td&gt;
+		&lt;td colspan="8"&gt;value&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;RP Email&lt;/td&gt;
+		&lt;td&gt;with&lt;/td&gt;
+		&lt;td colspan="8"&gt;@Email&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;$mnb3=&lt;/td&gt;
+		&lt;td&gt;get field&lt;/td&gt;
+		&lt;td&gt;RP Email&lt;/td&gt;
+		&lt;td colspan="8"&gt;value&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;RP Phone Number&lt;/td&gt;
+		&lt;td&gt;with&lt;/td&gt;
+		&lt;td colspan="8"&gt;@Number&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor6"&gt;
+		&lt;td&gt;$mnb4=&lt;/td&gt;
+		&lt;td&gt;get field&lt;/td&gt;
+		&lt;td&gt;RP Phone Number&lt;/td&gt;
+		&lt;td colspan="8"&gt;value&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Button actions&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;click button with CANCEL&lt;/td&gt;
+		&lt;td&gt;CANCEL&lt;/td&gt;
+		&lt;td&gt;with NO&lt;/td&gt;
+		&lt;td&gt;NO&lt;/td&gt;
+		&lt;td&gt;with NEXT&lt;/td&gt;
+		&lt;td&gt;NEXT&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="6"&gt;@CANCEL&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="6"&gt;@NO&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="6"&gt;@NEXT&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Inspection Review&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;get value with Status of Compliance&lt;/td&gt;
+		&lt;td&gt;compliance&lt;/td&gt;
+		&lt;td&gt;with Reviewer&lt;/td&gt;
+		&lt;td&gt;Reviewer&lt;/td&gt;
+		&lt;td&gt;with Inspector Notes&lt;/td&gt;
+		&lt;td&gt;Notes&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor6"&gt;
+		&lt;td&gt;$get1=&lt;/td&gt;
+		&lt;td&gt;get field&lt;/td&gt;
+		&lt;td&gt;Status of Compliance&lt;/td&gt;
+		&lt;td colspan="4"&gt;value&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Status of Compliance&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td colspan="4"&gt;$get1&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor7"&gt;
+		&lt;td&gt;$get2=&lt;/td&gt;
+		&lt;td&gt;get field&lt;/td&gt;
+		&lt;td&gt;Reviewer&lt;/td&gt;
+		&lt;td colspan="4"&gt;value&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;reviewer&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td colspan="4"&gt;$get2&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td&gt;get field&lt;/td&gt;
+		&lt;td&gt;Status of Compliance&lt;/td&gt;
+		&lt;td colspan="4"&gt;value&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td&gt;get field&lt;/td&gt;
+		&lt;td&gt;Reviewer&lt;/td&gt;
+		&lt;td colspan="4"&gt;value&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;$qwe=&lt;/td&gt;
+		&lt;td&gt;get random string&lt;/td&gt;
+		&lt;td colspan="5"&gt;50&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Inspector Notes&lt;/td&gt;
+		&lt;td&gt;with&lt;/td&gt;
+		&lt;td colspan="4"&gt;$qwe&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Approval 1&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;click task with Task Name&lt;/td&gt;
+		&lt;td&gt;Name&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor3"&gt;
+		&lt;td&gt;click on link&lt;/td&gt;
+		&lt;td colspan="2"&gt;@Name&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Approval form 1&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;verify fields with RP Trade Name&lt;/td&gt;
+		&lt;td&gt;Trade&lt;/td&gt;
+		&lt;td&gt;with RP Legal Name&lt;/td&gt;
+		&lt;td&gt;Legal&lt;/td&gt;
+		&lt;td&gt;with RP Type&lt;/td&gt;
+		&lt;td&gt;Type&lt;/td&gt;
+		&lt;td&gt;with RP Email&lt;/td&gt;
+		&lt;td&gt;Email&lt;/td&gt;
+		&lt;td&gt;RP Phone Number&lt;/td&gt;
+		&lt;td&gt;Number&lt;/td&gt;
+		&lt;td&gt;with Product Type&lt;/td&gt;
+		&lt;td&gt;Producttype&lt;/td&gt;
+		&lt;td&gt;with Product Regulations&lt;/td&gt;
+		&lt;td&gt;Regulations&lt;/td&gt;
+		&lt;td&gt;with URL&lt;/td&gt;
+		&lt;td&gt;URL&lt;/td&gt;
+		&lt;td&gt;with Status of Compliance&lt;/td&gt;
+		&lt;td&gt;Status&lt;/td&gt;
+		&lt;td&gt;with Comments&lt;/td&gt;
+		&lt;td&gt;comments&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;RP Trade Name&lt;/td&gt;
+		&lt;td colspan="19"&gt;is not blank&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;RP Trade Name&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td colspan="18"&gt;$mnb&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;RP Legal Name&lt;/td&gt;
+		&lt;td colspan="19"&gt;is not blank&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;RP Legal Name&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td colspan="18"&gt;$mnb1&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;RP Type&lt;/td&gt;
+		&lt;td colspan="19"&gt;is not blank&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;RP Type&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td colspan="18"&gt;$mnb2&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;RP Email&lt;/td&gt;
+		&lt;td colspan="19"&gt;is not blank&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;RP Email&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td colspan="18"&gt;$mnb3&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;RP Phone Number&lt;/td&gt;
+		&lt;td colspan="19"&gt;is not blank&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;RP Phone Number&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td colspan="18"&gt;$mnb4&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Product Type&lt;/td&gt;
+		&lt;td colspan="19"&gt;is not blank&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Product Regulations&lt;/td&gt;
+		&lt;td colspan="19"&gt;is not blank&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;URL&lt;/td&gt;
+		&lt;td colspan="19"&gt;is not blank&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Status of Compliance&lt;/td&gt;
+		&lt;td colspan="19"&gt;is not blank&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;$qwe1=&lt;/td&gt;
+		&lt;td&gt;get random string&lt;/td&gt;
+		&lt;td colspan="19"&gt;20&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Comments&lt;/td&gt;
+		&lt;td&gt;with&lt;/td&gt;
+		&lt;td colspan="18"&gt;$qwe1&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Approval form 2&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;verify fields with RP Trade Name&lt;/td&gt;
+		&lt;td&gt;Trade&lt;/td&gt;
+		&lt;td&gt;with RP Legal Name&lt;/td&gt;
+		&lt;td&gt;Legal&lt;/td&gt;
+		&lt;td&gt;with RP Type&lt;/td&gt;
+		&lt;td&gt;Type&lt;/td&gt;
+		&lt;td&gt;with RP Email&lt;/td&gt;
+		&lt;td&gt;Email&lt;/td&gt;
+		&lt;td&gt;RP Phone Number&lt;/td&gt;
+		&lt;td&gt;Number&lt;/td&gt;
+		&lt;td&gt;with Product Type&lt;/td&gt;
+		&lt;td&gt;Producttype&lt;/td&gt;
+		&lt;td&gt;with Product Regulations&lt;/td&gt;
+		&lt;td&gt;Regulations&lt;/td&gt;
+		&lt;td&gt;with URL&lt;/td&gt;
+		&lt;td&gt;URL&lt;/td&gt;
+		&lt;td&gt;with Status of Compliance&lt;/td&gt;
+		&lt;td&gt;Status&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;RP Trade Name&lt;/td&gt;
+		&lt;td colspan="17"&gt;is not blank&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;RP Trade Name&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td colspan="16"&gt;$mnb&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;RP Legal Name&lt;/td&gt;
+		&lt;td colspan="17"&gt;is not blank&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;RP Legal Name&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td colspan="16"&gt;$mnb1&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;RP Type&lt;/td&gt;
+		&lt;td colspan="17"&gt;is not blank&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;RP Type&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td colspan="16"&gt;$mnb2&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;RP Email&lt;/td&gt;
+		&lt;td colspan="17"&gt;is not blank&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;RP Email&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td colspan="16"&gt;$mnb3&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;RP Phone Number&lt;/td&gt;
+		&lt;td colspan="17"&gt;is not blank&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;RP Phone Number&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td colspan="16"&gt;$mnb4&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Product Type&lt;/td&gt;
+		&lt;td colspan="17"&gt;is not blank&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Product Regulations&lt;/td&gt;
+		&lt;td colspan="17"&gt;is not blank&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;URL&lt;/td&gt;
+		&lt;td colspan="17"&gt;is not blank&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Status of Compliance&lt;/td&gt;
+		&lt;td colspan="17"&gt;is not blank&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Approval form 2.1&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;check field with Status of Compliance&lt;/td&gt;
+		&lt;td&gt;Compliance&lt;/td&gt;
+		&lt;td&gt;with Is Inspector Edits&lt;/td&gt;
+		&lt;td&gt;edits&lt;/td&gt;
+		&lt;td&gt;with Is Manager Review&lt;/td&gt;
+		&lt;td&gt;Review&lt;/td&gt;
+		&lt;td&gt;with Manager Group&lt;/td&gt;
+		&lt;td&gt;Group&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Status of Compliance&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td colspan="6"&gt;@Compliance&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Is Inspector Edits&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td colspan="6"&gt;@edits&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Is Manager Review&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td colspan="6"&gt;@Review&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;verify field&lt;/td&gt;
+		&lt;td&gt;Manager Group&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td colspan="6"&gt;@Group&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Approval form 2.2&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;check value with Comments&lt;/td&gt;
+		&lt;td colspan="6"&gt;comments&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;verify grid&lt;/td&gt;
+		&lt;td&gt;Previous Comments&lt;/td&gt;
+		&lt;td&gt;column&lt;/td&gt;
+		&lt;td&gt;[1]&lt;/td&gt;
+		&lt;td&gt;row&lt;/td&gt;
+		&lt;td&gt;[1]&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td&gt;$qwe&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;verify grid&lt;/td&gt;
+		&lt;td&gt;Previous Comments&lt;/td&gt;
+		&lt;td&gt;column&lt;/td&gt;
+		&lt;td&gt;[1]&lt;/td&gt;
+		&lt;td&gt;row&lt;/td&gt;
+		&lt;td&gt;[2]&lt;/td&gt;
+		&lt;td&gt;contains&lt;/td&gt;
+		&lt;td&gt;$qwe1&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: TEST_SYSTEM=slim&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: COMMAND_PATTERN=java -Dlog4j.debug -Dlog4j.configuration=file:\\\${automated.testing.home}\log4j.properties -cp %p %m&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;classpath: C:\FitNesse/**.jar&lt;/span&gt;&lt;br/&gt;             &lt;br/&gt;&lt;div class="collapsible"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Initialization&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;com.appiancorp.ps.automatedtest.fixture.SitesFixture&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="scenario closed"&gt;
+		&lt;td class="ignore"&gt;sample&lt;/td&gt;
+		&lt;td class="ignore"&gt;Aswin@123&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="scenario-detail closed-detail"&gt;&lt;td colspan="2"&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td&gt;sample&lt;/td&gt;
+		&lt;td&gt;username&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor7"&gt;
+		&lt;td&gt;setup with&lt;/td&gt;
+		&lt;td&gt;CHROME&lt;/td&gt;
+		&lt;td&gt;browser&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor7"&gt;
+		&lt;td&gt;set appian url to&lt;/td&gt;
+		&lt;td colspan="2"&gt;https://appiancoe.vuram.com/suite/sites/tobacco-and-vaping&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;set appian version to&lt;/td&gt;
+		&lt;td colspan="2"&gt;22.3&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;set appian locale to&lt;/td&gt;
+		&lt;td colspan="2"&gt;en_US&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;login with username&lt;/td&gt;
+		&lt;td colspan="2"&gt;Aswin@123&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;set screenshot path to&lt;/td&gt;
+		&lt;td&gt;C:\FitNesse\Screenshot/&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Task&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td colspan="4"&gt;script&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;click on menu&lt;/td&gt;
+		&lt;td colspan="3"&gt;MY TASK&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor3"&gt;
+		&lt;td&gt;click on link&lt;/td&gt;
+		&lt;td colspan="3"&gt;SEND BACK[1]&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td colspan="4"&gt;accept task&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;RP Type&lt;/td&gt;
+		&lt;td&gt;with&lt;/td&gt;
+		&lt;td&gt;Retailer&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="3"&gt;NEXT&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;set test variable&lt;/td&gt;
+		&lt;td&gt;task&lt;/td&gt;
+		&lt;td&gt;with&lt;/td&gt;
+		&lt;td&gt;{"button":"NEXT","Type":"Vaping Products","Regulations":"TVPA-30.21"}&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Product Type&lt;/td&gt;
+		&lt;td&gt;with&lt;/td&gt;
+		&lt;td&gt;tv!task.Type&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;populate field&lt;/td&gt;
+		&lt;td&gt;Product Regulations&lt;/td&gt;
+		&lt;td&gt;with&lt;/td&gt;
+		&lt;td&gt;tv!task.Regulations&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="3"&gt;tv!task.button&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="3"&gt;tv!task.button&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor8"&gt;
+		&lt;td&gt;get field&lt;/td&gt;
+		&lt;td&gt;Status of Compliance&lt;/td&gt;
+		&lt;td colspan="2"&gt;value&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td&gt;get field&lt;/td&gt;
+		&lt;td&gt;Status of Compliance&lt;/td&gt;
+		&lt;td&gt;value&lt;/td&gt;
+	&lt;td&gt;No_evidence of Non Compliance&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="3"&gt;UPDATE&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;click on button&lt;/td&gt;
+		&lt;td colspan="3"&gt;YES&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Logout&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;tear down&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+    <relativePageName>SendBackForm</relativePageName>
+    <instructions>
+      <instructionResult>
+        <instruction>{id='scriptTable_17_0', instruction='make', instanceName='scriptTableActor', className='com.appiancorp.ps.automatedtest.fixture.SitesFixture', args=[]}</instruction>
+        <slimResult>pass(com.appiancorp.ps.automatedtest.fixture.SitesFixture)</slimResult>
+        <expectation>
+          <status>pass</status>
+          <instructionId>scriptTable_17_0</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+          <evaluationMessage>com.appiancorp.ps.automatedtest.fixture.SitesFixture</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_17_1/scriptTable_8_0', instruction='call', instanceName='scriptTableActor', methodName='setupWithBrowser', args=[CHROME]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_17_1/scriptTable_8_0</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_17_1/scriptTable_8_1', instruction='call', instanceName='scriptTableActor', methodName='setAppianUrlTo', args=[https://appiancoe.vuram.com/suite/sites/tobacco-and-vaping]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_17_1/scriptTable_8_1</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_17_1/scriptTable_8_2', instruction='call', instanceName='scriptTableActor', methodName='setAppianVersionTo', args=[22.3]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_17_1/scriptTable_8_2</instructionId>
+          <col>0</col>
+          <row>3</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_17_1/scriptTable_8_3', instruction='call', instanceName='scriptTableActor', methodName='setAppianLocaleTo', args=[en_US]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_17_1/scriptTable_8_3</instructionId>
+          <col>0</col>
+          <row>4</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_17_1/scriptTable_8_4', instruction='call', instanceName='scriptTableActor', methodName='loginWithUsername', args=[Aswin@123]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_17_1/scriptTable_8_4</instructionId>
+          <col>0</col>
+          <row>5</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_17_2', instruction='call', instanceName='scriptTableActor', methodName='setScreenshotPathTo', args=[C:\FitNesse\Screenshot/]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_17_2</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_18_0', instruction='call', instanceName='scriptTableActor', methodName='clickOnMenu', args=[MY TASK]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_18_0</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_18_1', instruction='call', instanceName='scriptTableActor', methodName='clickOnLink', args=[SEND BACK[1]]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_18_1</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_18_2', instruction='call', instanceName='scriptTableActor', methodName='acceptTask', args=[]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_18_2</instructionId>
+          <col>0</col>
+          <row>3</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_18_3', instruction='call', instanceName='scriptTableActor', methodName='populateFieldWith', args=[RP Type, Retailer]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_18_3</instructionId>
+          <col>0</col>
+          <row>4</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_18_4', instruction='call', instanceName='scriptTableActor', methodName='clickOnButton', args=[NEXT]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_18_4</instructionId>
+          <col>0</col>
+          <row>5</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_18_5', instruction='call', instanceName='scriptTableActor', methodName='setTestVariableWith', args=[task, {"button":"NEXT","Type":"Vaping Products","Regulations":"TVPA-30.21"}]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_18_5</instructionId>
+          <col>0</col>
+          <row>6</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_18_6', instruction='call', instanceName='scriptTableActor', methodName='populateFieldWith', args=[Product Type, tv!task.Type]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_18_6</instructionId>
+          <col>0</col>
+          <row>7</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_18_7', instruction='call', instanceName='scriptTableActor', methodName='populateFieldWith', args=[Product Regulations, tv!task.Regulations]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_18_7</instructionId>
+          <col>0</col>
+          <row>8</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_18_8', instruction='call', instanceName='scriptTableActor', methodName='clickOnButton', args=[tv!task.button]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_18_8</instructionId>
+          <col>0</col>
+          <row>9</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_18_9', instruction='call', instanceName='scriptTableActor', methodName='clickOnButton', args=[tv!task.button]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_18_9</instructionId>
+          <col>0</col>
+          <row>10</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_18_10', instruction='call', instanceName='scriptTableActor', methodName='getFieldValue', args=[Status of Compliance]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_18_10</instructionId>
+          <col>0</col>
+          <row>11</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_18_11', instruction='call', instanceName='scriptTableActor', methodName='getFieldValue', args=[Status of Compliance]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_18_11</instructionId>
+          <col>0</col>
+          <row>12</row>
+          <type>ShowActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_18_12', instruction='call', instanceName='scriptTableActor', methodName='clickOnButton', args=[UPDATE]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_18_12</instructionId>
+          <col>0</col>
+          <row>13</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_18_13', instruction='call', instanceName='scriptTableActor', methodName='clickOnButton', args=[YES]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_18_13</instructionId>
+          <col>0</col>
+          <row>14</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='scriptTable_19_0', instruction='call', instanceName='scriptTableActor', methodName='tearDown', args=[]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <instructionId>scriptTable_19_0</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+        </expectation>
+      </instructionResult>
+    </instructions>
+  </result>
+  <executionLog>
+    <testSystem></testSystem>
+    <command></command>
+    <exitCode>0</exitCode>
+    <stdOut></stdOut>
+    <stdErr>ChromeDriver was started successfully.
+
+Apr 25, 2023 5:01:08 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 112, so returning the closest version found: 111
+
+</stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>1</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>53633</totalRunTimeInMillis>
+</testResults>
+

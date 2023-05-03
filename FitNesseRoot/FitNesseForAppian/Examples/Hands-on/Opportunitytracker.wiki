@@ -8,12 +8,12 @@ Test
              
 !*** Initialization
 !| script              |com.appiancorp.ps.automatedtest.fixture.SitesFixture                  |
-|setup with            |CHROME                            |Browser                            |
+|setup with            |CHROME                     |Browser                                   |
 |set appian url to     |https://appiancoe.vuram.com/suite/sites/d2207vgotm-opportunity-tracker|
 |set appian version to |22.3                                                                  |
 |set appian locale to  |en_US                                                                 |
 |set screenshot path to|C:\FitNesse\Screenshot/                                               |
 |login with username   |Aswin@1234                                                            |
 |click on menu         |COLLECTIONS OF TICKETS                                                |
-|count grid            |[1]                               |rows                               |
-|show                  |count grid                                                            |
+|count grid            |[1]                        |rows                                      |
+|show                  |count grid                 |[1]                 |rows                 |

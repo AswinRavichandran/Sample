@@ -13,9 +13,8 @@ Test
 |set appian version to|22.3                                                                                    |
 |set appian locale to |en_US                                                                                   |
 |login with username  |Aswin@1234                                                                              |
-|show                 |number of login attempts made                                                           |
 |click on menu        |TASK                                                                                    |
-|click on link        |026[1]                                                                                  |
+|click on link        |081[1]                                                                                  |
 |verify field         |Dummy Reservation|contains value|No                                                     |
 |verify field         |IO               |contains value|IO123407                                               |
 |verify field         |Product Group    |contains value|Villach                                                |
